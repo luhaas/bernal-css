@@ -1,7 +1,4 @@
 .area-profile {
-	button {
-		@include button(normal, 1px);
-	}
 	.wd-browsing-breadcrumbs {
 		display: none;
 	}
@@ -13,7 +10,7 @@
 		}
 	}
 	span.error {
-		color: darken( $danger, 40% );
+		color: darken($danger, 40% );
 		display: inline-block;
 		padding: 5px;
 	}

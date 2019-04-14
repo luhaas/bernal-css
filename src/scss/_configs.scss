@@ -1,25 +1,45 @@
 // nome da pasta do tema
 $theme-path: 'Base';
 
-// colors
-$base-color: #06799F;
-$base-color-2: #FF8973;
-$darken-color: mix($base-color, black, 80%);
-$lighten-color: mix($base-color, white, 80%);
-$font-dark: #444444;
+// CORES
+// vermelhos
+$base-color: #DC282D;
+$darken-color: #C2191F;
+$lighten-color: #F5363C;
 
-$font-light: #fff;
-$gray-dark: #777;
-$gray-medium: #ccc;
+// amarelo
+$base-color-2: #FFCB05;
+$darken-color-2: #EBBC00;
+$lighten-color-2: #FFD633;
+
+// verde
+$base-color-green: #00CC6F;
+$darken-color-green: #09B366;
+$lighten-color-green: #38E095;
+
+// preto
+$base-color-black: #262626;
+$darken-color-black: #1F1F1F;
+$lighten-color-black: #333333;
+
+// cinza
+$base-color-gray: #EFF2F7;
+$darken-color-gray: #E5E9F2;
+$lighten-color-gray: #F9FAFC;
+
+// cinzas
+$gray-dark: #808080;
+$gray-medium: #AFAFAF;
 $gray-semilight: #ddd;
 $gray-light: #eee;
 $gray-extralight: #f1f1f1;
 
-$btn-buy:#22884F;
-$price-off: #A1000C;
+$btn-buy: $base-color-green;
+$price-off: $base-color;
 $cart-total: #22884F;
 $cart-destaque: #22884F;
-// alerts
+
+// alertas
 $success: #dff0d8;
 $info: #d9edf7;
 $warning:#fcf8e3;
@@ -28,12 +48,27 @@ $danger:#f2dede;
 //flags
 $flag: #22884F;
 
-// fonts settings
-$font-family: Lato;
+// FONTES
+$font-black: $base-color-black;
+$font-gray: $gray-dark;
+$font-white: #fff;
+$font-thin: 'PFSquareSansPro-Thin', sans-serif;
+$font-thinitalic: 'PFSquareSansPro-ThinItalic', sans-serif;
+$font-light: 'PFSquareSansPro-Light', sans-serif;
+$font-lightitalic: 'PFSquareSansPro-LightItalic', sans-serif;
+$font-regular: 'PFSquareSansPro-Regular', sans-serif;
+$font-italic: 'PFSquareSansPro-Italic', sans-serif;
+$font-medium: 'PFSquareSansPro-Medium', sans-serif;
+$font-mediumitalic: 'PFSquareSansPro-MediumItalic', sans-serif;
+$font-bold: 'PFSquareSansPro-Bold', sans-serif;
+$font-bolditalic: 'PFSquareSansPro-BoldItalic', sans-serif;
+$font-extrablack: 'PFSquareSansPro-ExtraBlack', sans-serif;
+$font-extrablack: 'PFSquareSansPro-ExtraBlackItalic', sans-serif;
 $font-size: 14px;
+$font-size-16: 16px;
 
-// structure
-$wrapper: 1180px;
+// ESTRUTURA
+$wrapper: 1170px;
 
 // quantidade de produtos por linha em vitrine carrossel
 $qtd-products-vitrine: 4;

@@ -37,12 +37,12 @@
 					border: 0;
 					* {
 						box-shadow: none;
-						color: $font-dark;
+						color: $font-black;
 					}
 					.handler {
 						.icon {
 							@include round(100%);
-							background-color: $font-light;
+							background-color: $font-white;
 							width: 12px;
 							height: 12px;
 							border: 1px solid $gray-medium;
@@ -128,7 +128,7 @@
 			bottom: initial;
 			top: 0;
 			background-color: transparent;
-			color: $font-dark;
+			color: $font-black;
 			&:after {
 				content: '';
 			}

@@ -4,10 +4,10 @@
     padding: 1em 2em;
     cursor: pointer;
 
-    background: $base-color;
-    color: $font-light;
-    font-family: $font-family;
-    font-size: 0.875rem;
+    background: $base-color-green;
+    color: $font-white;
+    font-family: $font-regular;
+    font-size: 18px;
     line-height: 1em;
     font-weight: normal;
     text-align: center;
@@ -15,7 +15,6 @@
 	outline: none;
     border: none;
     border-bottom: none;
-    border-bottom-color: tint($base-color, 15%);
     @include round(2px);
     
     -webkit-transition: all 0.18s cubic-bezier(0.11, 0.96, 0.78, 1);
@@ -24,25 +23,24 @@
 
     &:hover, &.btn-hover {
     	text-decoration: none;
-	    color: $font-light;
-	    background-color: tint($base-color, 15%);
-	    border-bottom-color: $base-color;
+    	background: $darken-color-green;
+	    border-bottom-color: $darken-color-green;
     }
     &.btn-small {
     	padding: 0.7em 1em;
     	font-size: 0.75rem;
     }
 	&.btn-outline {
-		background: $font-light;
-		border: 1px solid $base-color;
-		color: $base-color;
+		background: $font-white;
+		border: 1px solid $base-color-green;
+		color: $base-color-green;
 		&:active {
-			background: tint($font-dark, 60%);
-    		color: $base-color;
+			background: tint($font-black, 60%);
+    		color: $base-color-green;
 		}
 		&:hover {
-		    background: tint($font-dark, 90%);
-		    color: $base-color;
+		    background: tint($font-black, 90%);
+		    color: $base-color-green;
 		}
 	}
 	&.btn-big {
@@ -57,24 +55,17 @@
 	    text-align: center;
 	}
 	&[disabled] {
-		background-color: tint($font-dark, 70%);
+		background-color: tint($font-black, 70%);
 	    font-weight: 500;
-	    color: tint($font-dark, 40%);
-	    border-bottom-color: tint($font-dark, 10%);
+	    color: tint($font-black, 40%);
+	    border-bottom-color: tint($font-black, 10%);
 	    cursor: wait;
 	}
 	&.btn-buy {
 		background-color: $btn-buy;
-    	&:before {
-    		@include aws-icon("\f07a");
-    		font-size:0.8em;
-    		padding-right: 5px;
-    	}
-    	&:active {
-			background: tint($btn-buy, 20%);
-		}
-		&:hover {
-		    background: tint($btn-buy, 10%);
+		font-family: $font-bold;
+    	&:active, &:hover {
+			background: $darken-color-green;
 		}
 		small {
 			display: block;
@@ -88,7 +79,7 @@
 		@extend .btn-wide;
 		background: $gray-dark;
 		padding: 15px;
-		font-family: $font-family;
+		font-family: $font-regular;
 		&:active {
 			background: tint($gray-dark, 20%);
 		}

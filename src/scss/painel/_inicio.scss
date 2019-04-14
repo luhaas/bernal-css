@@ -395,9 +395,6 @@
 		border-bottom: 1px solid $gray-light;
 		width: 100%;
 
-		.btn {
-			@include button(normal, 1px);
-		}
 		.order-legend,
 		.order-code {
 			text-align: left;

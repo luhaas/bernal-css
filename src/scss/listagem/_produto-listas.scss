@@ -55,7 +55,7 @@
 			    height: auto;
 			}
 			.name {
-				color:$font-dark;
+				color:$font-black;
 				display: block;
 			}
 			.medias{
@@ -83,7 +83,7 @@
 				position: initial;
 				 .sale-price span {
 					font-size: 1em;
-					color: $font-dark;
+					color: $font-black;
 				}
 				.savings,.condition {
 					display: none;
@@ -97,7 +97,7 @@
 			.product {	
 				@extend .row;		
 				.name {
-					color:$font-dark;
+					color:$font-black;
 					font-size: 1.2em;
 					font-weight: bold;
 					display: block;
