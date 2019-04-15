@@ -1,5 +1,10 @@
 .wd-checkout-basket-summaryheader {
+	background: $base-color-green;
+	@include round(2px);
+	padding: 10px;
+	position: relative;
 	> a {
+		@include link($font-white, $font-white, $font-white, none, none, none);
 		b {
 			font-size: 0;
 			&:before {
@@ -10,19 +15,8 @@
 			}
 		}
 		.basket-size-wrapper {
-			background-color: $base-color-2;
-			color: $font-white;
-			width: 25px;
-			height: 25px;
-			position: absolute;
-		    left: 20px;
-		    bottom: -13px;
-		    font-size: 0.8em;
-		    text-align: center;
-		    line-height: 19px;
-		    border: 2px solid #fff;
-		    font-weight: bold;
-			@include round(100%);	
+			font-family: $font-medium;
+			font-size: 15px;
 		}
 	}
 	&.empty {
@@ -47,51 +41,72 @@
 		}
 	}
 	.wd-widget {
-		background-color: #fff;
-		border: 1px solid $gray-light;
-		padding: 15px;
-		top: 35px;
+		@extend .dropdown-shaddow !optional;
+		@extend .transform-center !optional;
+		width: 288px;
+		left: initial !important;
+		right: 0 !important;
+		transform: none !important;
+		top: 50px;
 		.wd-header {
-			font-size: 18px;
-			text-align: left;
-			padding: 0;
+			@extend .dropdown-title !optional;
 		}
 		.wd-content {
-			padding: 0;
-			padding-bottom: 15px;
+			padding: 25px;
 			margin: 0;
 			ul {
 				padding: 0;
+				padding-bottom: 10px;
 				li {
+					margin: 0;
+					&.img {
+						img {
+							width: 56px;
+							height: auto;
+						}
+					}
+					&.name, &.price {
+						width: 170px;
+						padding: 0 10px;
+						box-sizing: border-box;
+						text-align: left;
+						line-height: 18px;
+					}
 					&.name {
+						color: $font-black;
+						min-height: 35px;
 						.freeitem {
 							display: none;
 						}
 					}
-					.price {
-						font-weight: bold;
-						font-size: 1.2em;
+					&.price {
+						font-family: $font-medium;
+						color: $base-color;
 					}		
 				}
 			}
 			
 			.subtotal {
-				padding: 0;
+				padding: 6px 15px;
 				height: auto;
+				background-color: $gray-background;
+				font-weight: normal;
 				li {
 					margin: 0;
 				}
 				.value {
+					font-family: $font-bold;
+					color: $base-color;
 					position: initial;
 					float: right;
 				}
 			}
 		}
 		.wd-footer {
-			padding: 15px 0 0 0;
-			border-top: 1px solid $gray-light;
+			padding: 0;
 			.go-to-basket {
-				background-color: $btn-buy;
+				@extend .btn-wide !optional;
+				font-family: $font-bold;
 			}
 			.go-to-checkout {
 				display: none;

@@ -1,7 +1,8 @@
 .btn, button {
     display: inline-block;
     position: relative;
-    padding: 1em 2em;
+	padding: 0 2em;
+	height: 50px;
     cursor: pointer;
 
     background: $base-color-green;

@@ -104,11 +104,13 @@
 				padding: 0;
 				h3 {
 					font-size: $font-size;
+					font-family: $font-medium;
 					font-weight: normal;					
 					display: inline-block;
 					padding: 0;
 					margin: 0;
 					a {
+						font-family: $font-regular;
 						color: $font-white;
 						padding: 1.06em 1.4em;
 						display: block;
@@ -124,40 +126,49 @@
 					background-color: $font-white;	
 					}			
 				}
-				&:hover {
-					background-color: $darken-color;
-					.sub-section {
-						display: block;
-						position: absolute;
-						border: 1px solid $gray-light;
-						border-top: 0;
-						background-color:$font-white;
-						z-index: 55;
-						padding: 20px 30px;
-						min-width: 100px;
-     					transition-delay: 100ms;
-						li {
-							&:first-child {
-								margin-top: 0;
-							}
-							&:last-child {
-								margin-bottom: 0;
-							}
-							h4 {
+				.sub-section {
+					@extend .dropdown-shaddow !optional;
+					z-index: 55;
+					padding: 25px;
+					min-width: 100px;
+					transition-delay: 100ms;
+					> li {
+						margin-top: 0;
+						margin-bottom: 15px;
+						&:last-child {
+							margin-bottom: 0;
+						}
+						h4 {
+							margin: 0;
+						}
+						a {
+							@include link($base-color-black, $base-color-black, $base-color-black, none);
+							line-height: 20px;
+						}
+					}
+					&.level-2 {
+						> li > h4 > a {
+							font-family: $font-bold;
+						}
+						.level-3 {
+							padding-left: 5px;
+							li {
 								margin: 0;
 							}
 						}
-						
-						* {
-							font-size: 0.97em;
-							font-weight: normal;	
-						}
+					}
+				}
+				&:hover {
+					background-color: #fff;
+					@extend .shaddow !optional;
+					h3 > a {						
+						color: $base-color;
+					}
+					.sub-section {
+						display: block;
 					}
 				}
 			}
-		}
-		.sub-section {
-			display: none;
 		}
 	}
 	.day-offer {

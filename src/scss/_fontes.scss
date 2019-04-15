@@ -1,113 +1,220 @@
 @font-face {
     font-family: 'Lato', sans-serif;
-    src: url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/Lato-Regular.woff2') format("woff2"), url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/Lato-Regular.woff') format("woff");
+    src: url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/Lato-Regular.woff2') format("woff2"), url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/Lato-Regular.woff') format("woff");
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'PFSquareSansPro-Thin';
-    src: url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Thin.eot');
-    src: url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Thin.eot?#iefix') format('embedded-opentype'),
-        url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Thin.woff2') format('woff2'),
-        url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Thin.woff') format('woff'),
-        url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Thin.ttf') format('truetype');
+    src: url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Thin.eot');
+    src: url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Thin.eot?#iefix') format('embedded-opentype'),
+        url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Thin.woff2') format('woff2'),
+        url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Thin.woff') format('woff'),
+        url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Thin.ttf') format('truetype');
 }
 @font-face {
     font-family: 'PFSquareSansPro-ThinItalic';
-    src: url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-ThinItalic.eot');
-    src: url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-ThinItalic.eot?#iefix') format('embedded-opentype'),
-        url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-ThinItalic.woff2') format('woff2'),
-        url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-ThinItalic.woff') format('woff'),
-        url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-ThinItalic.ttf') format('truetype');
+    src: url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-ThinItalic.eot');
+    src: url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-ThinItalic.woff2') format('woff2'),
+        url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-ThinItalic.woff') format('woff'),
+        url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-ThinItalic.ttf') format('truetype');
 }
 @font-face {
     font-family: 'PFSquareSansPro-Light';
-    src: url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Light.eot');
-    src: url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Light.eot?#iefix') format('embedded-opentype'),
-        url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Light.woff2') format('woff2'),
-        url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Light.woff') format('woff'),
-        url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Light.ttf') format('truetype');
+    src: url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Light.eot');
+    src: url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Light.woff2') format('woff2'),
+        url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Light.woff') format('woff'),
+        url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Light.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'PFSquareSansPro-LightItalic';
-    src: url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-LightItalic.eot');
-    src: url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-LightItalic.eot?#iefix') format('embedded-opentype'),
-        url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-LightItalic.woff2') format('woff2'),
-        url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-LightItalic.woff') format('woff'),
-        url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-LightItalic.ttf') format('truetype');
+    src: url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-LightItalic.eot');
+    src: url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-LightItalic.woff2') format('woff2'),
+        url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-LightItalic.woff') format('woff'),
+        url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-LightItalic.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'PFSquareSansPro-Regular';
-    src: url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Regular.eot');
-    src: url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Regular.eot?#iefix') format('embedded-opentype'),
-        url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Regular.woff2') format('woff2'),
-        url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Regular.woff') format('woff'),
-        url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Regular.ttf') format('truetype');
+    src: url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Regular.eot');
+    src: url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Regular.woff2') format('woff2'),
+        url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Regular.woff') format('woff'),
+        url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'PFSquareSansPro-Italic';
-    src: url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Italic.eot');
-    src: url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Italic.eot?#iefix') format('embedded-opentype'),
-        url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Italic.woff2') format('woff2'),
-        url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Italic.woff') format('woff'),
-        url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Italic.ttf') format('truetype');
+    src: url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Italic.eot');
+    src: url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Italic.eot?#iefix') format('embedded-opentype'),
+        url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Italic.woff2') format('woff2'),
+        url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Italic.woff') format('woff'),
+        url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Italic.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'PFSquareSansPro-Medium';
-    src: url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Medium.eot');
-    src: url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Medium.eot?#iefix') format('embedded-opentype'),
-        url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Medium.woff2') format('woff2'),
-        url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Medium.woff') format('woff'),
-        url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Medium.ttf') format('truetype');
+    src: url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Medium.eot');
+    src: url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Medium.woff2') format('woff2'),
+        url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Medium.woff') format('woff'),
+        url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'PFSquareSansPro-MediumItalic';
-    src: url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-MediumItalic.eot');
-    src: url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-MediumItalic.eot?#iefix') format('embedded-opentype'),
-        url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-MediumItalic.woff2') format('woff2'),
-        url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-MediumItalic.woff') format('woff'),
-        url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-MediumItalic.ttf') format('truetype');
+    src: url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-MediumItalic.eot');
+    src: url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-MediumItalic.woff2') format('woff2'),
+        url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-MediumItalic.woff') format('woff'),
+        url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-MediumItalic.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'PFSquareSansPro-Bold';
-    src: url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Bold.eot');
-    src: url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Bold.eot?#iefix') format('embedded-opentype'),
-        url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Bold.woff2') format('woff2'),
-        url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Bold.woff') format('woff'),
-        url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Bold.ttf') format('truetype');
+    src: url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Bold.eot');
+    src: url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Bold.woff2') format('woff2'),
+        url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Bold.woff') format('woff'),
+        url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-Bold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'PFSquareSansPro-BoldItalic';
-    src: url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-BoldItalic.eot');
-    src: url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-BoldItalic.woff2') format('woff2'),
-        url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-BoldItalic.woff') format('woff'),
-        url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-BoldItalic.ttf') format('truetype');
+    src: url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-BoldItalic.eot');
+    src: url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-BoldItalic.woff2') format('woff2'),
+        url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-BoldItalic.woff') format('woff'),
+        url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-BoldItalic.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'PFSquareSansPro-ExtraBlack';
-    src: url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-ExtraBlack.eot');
-    src: url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-ExtraBlack.eot?#iefix') format('embedded-opentype'),
-        url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-ExtraBlack.woff2') format('woff2'),
-        url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-ExtraBlack.woff') format('woff'),
-        url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-ExtraBlack.ttf') format('truetype');
+    src: url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-ExtraBlack.eot');
+    src: url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-ExtraBlack.eot?#iefix') format('embedded-opentype'),
+        url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-ExtraBlack.woff2') format('woff2'),
+        url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-ExtraBlack.woff') format('woff'),
+        url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-ExtraBlack.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'PFSquareSansPro-ExtraBlackItalic';
-    src: url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-ExtraBlackItalic.eot');
-    src: url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-ExtraBlackItalic.eot?#iefix') format('embedded-opentype'),
-        url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-ExtraBlackItalic.woff2') format('woff2'),
-        url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-ExtraBlackItalic.woff') format('woff'),
-        url('/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-ExtraBlackItalic.ttf') format('truetype');
+    src: url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-ExtraBlackItalic.eot');
+    src: url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-ExtraBlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-ExtraBlackItalic.woff2') format('woff2'),
+        url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-ExtraBlackItalic.woff') format('woff'),
+        url('http://www.bernalonline.core.dcg.com.br/Custom/Content/Themes/#{$theme-path}/CSS/Fontes/PFSquareSansPro/PFSquareSansPro-ExtraBlackItalic.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('/custom/content/themes/Base/CSS/Fontes/iconmoon/icomoon.eot?css08z');
+    src:  url('/custom/content/themes/Base/CSS/Fontes/iconmoon/icomoon.eot?css08z#iefix') format('embedded-opentype'),
+      url('/custom/content/themes/Base/CSS/Fontes/iconmoon/icomoon.ttf?css08z') format('truetype'),
+      url('/custom/content/themes/Base/CSS/Fontes/iconmoon/icomoon.woff?css08z') format('woff'),
+      url('/custom/content/themes/Base/CSS/Fontes/iconmoon/icomoon.svg?css08z#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-Caminho-199:before {
+    content: "\e900";
+    color: #dc282d;
+  }
+  .icon-close:before {
+    content: "\e901";
+    color: #dc282d;
+  }
+  .icon-cart:before {
+    content: "\e902";
+    color: #dc282d;
+  }
+  .icon-instagram:before {
+    content: "\e903";
+  }
+  .icon-youtube:before {
+    content: "\e904";
+    color: #ce1312;
+  }
+  .icon-delivery-truck:before {
+    content: "\e905";
+    color: #fff;
+  }
+  .icon-drill:before {
+    content: "\e906";
+    color: #fff;
+  }
+  .icon-facebook-logo:before {
+    content: "\e907";
+    color: #fff;
+  }
+  .icon-floor:before {
+    content: "\e908";
+    color: #fff;
+  }
+  .icon-light:before {
+    content: "\e909";
+    color: #fff;
+  }
+  .icon-oil:before {
+    content: "\e90a";
+    color: #fff;
+  }
+  .icon-paint-bucket:before {
+    content: "\e90b";
+    color: #fff;
+  }
+  .icon-pillow:before {
+    content: "\e90c";
+    color: #fff;
+  }
+  .icon-plug:before {
+    content: "\e90d";
+    color: #fff;
+  }
+  .icon-Sale:before {
+    content: "\e90e";
+    color: #dc282d;
+  }
+  .icon-shopping-cart-2:before {
+    content: "\e90f";
+    color: #fff;
+  }
+  .icon-phone:before {
+    content: "\e910";
+    color: #dc282d;
+  }
+  .icon-home:before {
+    content: "\e911";
+    color: #808080;
+  }
+  .icon-whatsapp:before {
+    content: "\e912";
+    color: #dc282d;
+  }
+  .icon-wheelbarrow:before {
+    content: "\e913";
+    color: #fff;
+  }
+  

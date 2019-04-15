@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52" height="40.005" viewBox="0 0 52 40.005">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Caminho_946" data-name="Caminho 946" d="M491.174-1640.6H446.265a3.537,3.537,0,0,0-3.545,3.53v32.945a3.538,3.538,0,0,0,3.545,3.53h44.909a3.538,3.538,0,0,0,3.546-3.53v-32.945A3.537,3.537,0,0,0,491.174-1640.6Zm0,33.98-9.384-9.342a1.778,1.778,0,0,0-2.462.044,1.759,1.759,0,0,0-.044,2.451l9.384,9.342h-39.9l9.384-9.342a1.759,1.759,0,0,0-.044-2.451,1.778,1.778,0,0,0-2.462-.044l-9.384,9.342v-22.65l21.273,15.966a1.779,1.779,0,0,0,2.127,0l21.485-15.978Zm0-30.451v3.389l-22.537,16.767-22.372-16.767v-3.389Z" transform="translate(0 0)" fill="#dc282d" clip-rule="evenodd"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Caminho_945" data-name="Caminho 945" d="M-80,689.409H1101.818V-2911H-80Z" transform="translate(80 2911)" fill="#dc282d"/>
+    </clipPath>
+  </defs>
+  <g id="Email_Icon" data-name="Email Icon" transform="translate(-442.719 1640.6)" clip-path="url(#clip-path)">
+    <g id="Grupo_602" data-name="Grupo 602" transform="translate(-175.04 -3135.358)" clip-path="url(#clip-path-2)">
+      <path id="Caminho_944" data-name="Caminho 944" d="M437.72-1645.6h63.818v51.771H437.72Z" transform="translate(174.131 3134.475)" fill="#dc282d"/>
+    </g>
+  </g>
+</svg>

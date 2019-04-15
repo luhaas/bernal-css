@@ -1,23 +1,19 @@
 header {
 	.top-bar {
-		background-color: $gray-light;
-		font-size: 0.9em;
-		padding: 10px 0;
+		background-color: $gray-dark;
+		color: $font-white;
+		padding: 6px 0;
 	}
-	.ofertas {
+	.offers {
 		text-align: left;
-		text-transform: uppercase;
-    	font-size: 0.9em;
+		> span {
+			margin-right: 25px;
+		}
 	}
 	.links {
 		text-align: right;
 	}
 
-	.ofertas, .links {
-		i {
-			margin-right: 5px;
-		}
-	}
 	&.flutuante {
 		.top-bar {
 			margin-bottom: 82px;
@@ -32,30 +28,38 @@ header {
 	}
 	.main-bar {
 		padding: 20px 0;
-		background: #fff;
+		background: $gray-background;
 		&.simples {
 		    box-shadow: 1px 1px 1px 1px $gray-semilight;
 		}
 		.wd-search {
 			.input-wrapper {	
-				margin-bottom: 0;			
+				margin-bottom: 0;
+				padding: 10px;
+				margin-right: 0;
 				input {
-					@include round-right(0);
+					@extend .shaddow !optional;
+					font-size: $font-size-16;
 				}
 			}
 			button {
 			    position: absolute;
-			    right: 4px;
-			    top: 0;
-			    width: auto;
+			    right: 9px;
+					top: 10px;
+					padding: 0;
+					height: 50px;
+			    width: 110px;
 			    @include round-left(0);
 			}
 		}
-		.wd-profile-welcome-shopper {
-			position: relative;
-			line-height: 30px;
+		.my-account, .attendance {
+			.title {
+				color: $base-color-black;
+			}
+		}
+		.my-account {			
 			&:hover {
-				.widget-content {
+				.wd-profile-welcome-shopper {
 					display: block;
 				}
 			}
@@ -64,58 +68,90 @@ header {
     			padding-right: 5px;
     			color: $base-color;
 			}
+		}
+		.wd-profile-welcome-shopper {
+			@extend .dropdown-shaddow !optional;
+			@extend .transform-center !optional;
+			top: 30px;
+			min-height: 350px;
+			width: 248px;
+			box-sizing: border-box;
+			overflow: hidden;
+			z-index: 2;
 			.widget-title {
-			line-height: 45px;				
-				.title {
-					color: $font-black;
-					cursor: pointer;
-					display: inline-block;
-					span, i {
-						color: $base-color;
-					}
-				}
+				@extend .dropdown-title !optional;
 			}
 			.widget-content {
-				display: none;
-			    position: absolute;
-			    left: 0px;
-			    top: 30px;
-			    min-height: 100px;
-			    width: 150px;
-			    padding: 15px;
-			    box-sizing: border-box;
-			    border: 1px solid $gray-light;
-			    background: #fff;
-			    overflow: visible;
-			    z-index: 2;
-			    .login-wrapper, .new-account {
-			    	display: block;
-			    	text-align: center;
-			    }
-			    .wd-profile-login {
-		    		display: none !important;
-		    	}
-		    	.login-title {
-		    		background-color: $btn-buy;
-		    		color: $font-white;
-		    		margin-bottom: 10px;
-		    		@include round(2px);
-		    	}
-		    	.shopper-authenticated {
-		    		a {
-		    			line-height: auto;
-		    			display: block;
-		    			&.put-pipe {
-		    				padding: 0;
-		    				&:before {
-		    					display: none;
-		    				}
-		    				b {
-		    					font-weight: normal;
-		    				}
-		    			}
-		    		}
-		    	}
+				padding: 15px 25px 25px;
+				.login-wrapper, .new-account {
+					display: block;
+					text-align: center;
+				}
+				.new-account {
+					color: #A4A8B2;
+					font-size: $font-size;
+					margin-bottom: 10px;
+					a {
+						color: $base-color-green;
+						font-family: $font-bold;
+					}
+				}
+				.wd-profile-login {
+					display: block;
+					position: initial;
+					width: 100%;
+					height: auto;
+					padding: 0;
+					border: none;
+					background: #fff;
+					z-index: 1;
+					line-height: 12px;
+					.input-wrapper {
+						margin: 0;
+					}
+					input {
+						width: 100%;
+						@include round(2px);
+						padding: 12px 15px;
+						border: 1px solid $gray-light;
+						background-color: $gray-background;
+						font-size: $font-size-16;
+						font-style: normal;
+					}
+					button {
+						font-family: $font-bold;
+						@extend .btn-wide !optional;
+					}
+					.recover-password {
+						color: #A4A8B2;
+						font-size: $font-size;
+						margin: 10px 0;
+					}
+				}
+				.wd-profile-login-recover-password {
+					display: none;
+				}
+				.login-title {
+					background-color: $btn-buy;
+					color: $font-white;
+					margin-bottom: 10px;
+					@include round(2px);
+				}
+				.shopper-authenticated {
+					a {
+						line-height: auto;
+						display: block;
+						&.put-pipe {
+							padding: 0;
+							&:before {
+								display: none;
+							}
+							b {
+								font-weight: normal;
+							}
+						}
+					}
+				}
 			}
 		}
 

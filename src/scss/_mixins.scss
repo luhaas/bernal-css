@@ -53,6 +53,20 @@
     font-weight:$weight;
 }
 
+// estiliza tag a
+@mixin link($color: $base-color, $hover-color: $darken-color, $active-color: $darken-color, $text-decoration: underline, $hover-decoration: underline, $active-decoration: underline) {
+  color: $color;
+  text-decoration: $text-decoration;
+  &:hover {
+    color: $hover-color;
+    text-decoration: $hover-decoration;
+  }
+  &:hover {
+    color: $active-color;
+    text-decoration: $active-decoration;
+  }
+}
+
 /* flags */
 @mixin flag($display: table,$padding: 0.3em 0.6em, $font-size:0.8em,$bg-color:$flag, $color: $font-white, $margin:0 0 3px 0, $round: 2px) {
     display: $display;
