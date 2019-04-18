@@ -15,24 +15,24 @@
 			height: 100%;
 			text-align: center;
 			color: $font-white;
-     		padding: 0.66em 1.5em;
-     		width: 100%;
-     		box-sizing: border-box;
-    		line-height: 2em;
-    		cursor: pointer;
-     		.arrow-up {
-     			width: 0;
-			    height: 0;
-			    border-left: 7px solid transparent;
-			    border-right: 7px solid transparent;
-			    border-bottom: 7px solid #FFFFFF;
-			    position: absolute;
-			    top: 40px;
-			    left: 50%;
-			    margin-left: -7px;
-			    opacity: 0;
-			    transition: all 0.3s cubic-bezier(0.4, 0.2, 0, 1) 0ms;
-     		}
+			padding: 15px;
+			width: 178px;
+			box-sizing: border-box;
+			line-height: 2em;
+			cursor: pointer;
+			.arrow-up {
+				width: 0;
+				height: 0;
+				border-left: 7px solid transparent;
+				border-right: 7px solid transparent;
+				border-bottom: 7px solid #FFFFFF;
+				position: absolute;
+				top: 40px;
+				left: 50%;
+				margin-left: -7px;
+				opacity: 0;
+				transition: all 0.3s cubic-bezier(0.4, 0.2, 0, 1) 0ms;
+			}
 		}
 		> .wd-category-menu {
 			display: none;
@@ -102,6 +102,68 @@
 				float: left;
 				margin: 0;
 				padding: 0;
+				&:first-child {
+					a {
+						.icon:before {
+							@extend .icon-menu-pillow !optional;
+						}
+					}
+				}
+				&:nth-child(2) {
+					a {
+						.icon:before {
+							@extend .icon-menu-drill !optional;
+						}
+					}
+				}
+				&:nth-child(3) {
+					a {
+						.icon:before {
+							@extend .icon-menu-light !optional;
+						}
+					}
+				}
+				&:nth-child(4) {
+					a {
+						.icon:before {
+							@extend .icon-menu-wheelbarrow !optional;
+						}
+					}
+				}
+				&:nth-child(5) {
+					a {
+						.icon:before {
+							@extend .icon-menu-plug !optional;
+						}
+					}
+				}
+				&:nth-child(6) {
+					a:before {
+						@extend .icon-menu-oil !optional;
+					}
+				}
+				&:nth-child(7) {
+					a {
+						.icon:before {
+							@extend .icon-menu-floor !optional;
+						}
+					}
+				}
+				&:first-child {
+					a {
+						.icon:before {
+							@extend .icon-menu-paint-bucket !optional;
+						}
+					}
+					
+				}
+				&:last-child {
+					a {
+						.icon:before {
+							@extend .icon-menu-sale !optional;
+						}
+					}
+				}
 				h3 {
 					font-size: $font-size;
 					font-family: $font-medium;
@@ -110,21 +172,18 @@
 					padding: 0;
 					margin: 0;
 					a {
-						font-family: $font-regular;
+						font-family: $font-medium;
 						color: $font-white;
-						padding: 1.06em 1.4em;
+						padding: 10px;
 						display: block;
 						text-decoration: none;
+						.icon:before {
+							content: '';
+							display: block;
+							margin: 0 auto 5px;
+							min-height: 25px;
+						}
 					}
-				}
-				&:not(:first-child) {
-					&:before {
-					content: '';
-					width: 1px;
-					height: 12px;
-					display: inline-block;
-					background-color: $font-white;	
-					}			
 				}
 				.sub-section {
 					@extend .dropdown-shaddow !optional;

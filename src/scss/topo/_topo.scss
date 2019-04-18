@@ -6,12 +6,21 @@ header {
 	}
 	.offers {
 		text-align: left;
-		> span {
+		display: flex;
+		align-items: center;
+		> div {
 			margin-right: 25px;
 		}
 	}
-	.links {
+	.phone {
 		text-align: right;
+	}
+	.offers div, .phone {
+		display: flex;
+		align-items: center;
+		.icon {
+			margin-right: 5px;
+		}
 	}
 
 	&.flutuante {
@@ -32,29 +41,13 @@ header {
 		&.simples {
 		    box-shadow: 1px 1px 1px 1px $gray-semilight;
 		}
-		.wd-search {
-			.input-wrapper {	
-				margin-bottom: 0;
-				padding: 10px;
-				margin-right: 0;
-				input {
-					@extend .shaddow !optional;
-					font-size: $font-size-16;
-				}
-			}
-			button {
-			    position: absolute;
-			    right: 9px;
-					top: 10px;
-					padding: 0;
-					height: 50px;
-			    width: 110px;
-			    @include round-left(0);
-			}
-		}
 		.my-account, .attendance {
 			.title {
-				color: $base-color-black;
+				@include link($base-color-black, $base-color-black, $base-color-black, none, none, none);
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				padding-right: 25px;
 			}
 		}
 		.my-account {			

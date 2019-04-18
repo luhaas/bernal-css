@@ -5,13 +5,17 @@
 	position: relative;
 	> a {
 		@include link($font-white, $font-white, $font-white, none, none, none);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 		b {
 			font-size: 0;
 			&:before {
-				@include aws-icon("\f07a");
-				font-size: 27px;
+				content: '';
+				@extend .icon-top-cart !optional;
+				display: block;
 				position: relative;
-				top: 4px;
+				margin-right: 5px;
 			}
 		}
 		.basket-size-wrapper {

@@ -1,0 +1,142 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+[class^="icon-"], [class*=" icon-"] {
+  display: block;
+}
+
+.icon-facebook {
+  background-image: url(/Custom/Content/Themes/#{$theme-path}/Imagens/sprite.png);
+  background-position: 0px 0px;
+  width: 32px;
+  height: 32px;
+}
+.icon-instagram {
+  background-image: url(/Custom/Content/Themes/#{$theme-path}/Imagens/sprite.png);
+  background-position: -32px -32px;
+  width: 32px;
+  height: 32px;
+}
+.icon-menu-Sale {
+  background-image: url(/Custom/Content/Themes/#{$theme-path}/Imagens/sprite.png);
+  background-position: -96px -87px;
+  width: 22px;
+  height: 24px;
+}
+.icon-menu-drill {
+  background-image: url(/Custom/Content/Themes/#{$theme-path}/Imagens/sprite.png);
+  background-position: -96px -48px;
+  width: 24px;
+  height: 24px;
+}
+.icon-menu-floor {
+  background-image: url(/Custom/Content/Themes/#{$theme-path}/Imagens/sprite.png);
+  background-position: -24px -87px;
+  width: 24px;
+  height: 24px;
+}
+.icon-menu-light {
+  background-image: url(/Custom/Content/Themes/#{$theme-path}/Imagens/sprite.png);
+  background-position: -48px -87px;
+  width: 24px;
+  height: 24px;
+}
+.icon-menu-oil {
+  background-image: url(/Custom/Content/Themes/#{$theme-path}/Imagens/sprite.png);
+  background-position: 0px -87px;
+  width: 24px;
+  height: 24px;
+}
+.icon-menu-paint-bucket {
+  background-image: url(/Custom/Content/Themes/#{$theme-path}/Imagens/sprite.png);
+  background-position: -96px 0px;
+  width: 24px;
+  height: 24px;
+}
+.icon-menu-pillow {
+  background-image: url(/Custom/Content/Themes/#{$theme-path}/Imagens/sprite.png);
+  background-position: -72px -87px;
+  width: 24px;
+  height: 24px;
+}
+.icon-menu-plug {
+  background-image: url(/Custom/Content/Themes/#{$theme-path}/Imagens/sprite.png);
+  background-position: -96px -24px;
+  width: 24px;
+  height: 24px;
+}
+.icon-menu-wheelbarrow {
+  background-image: url(/Custom/Content/Themes/#{$theme-path}/Imagens/sprite.png);
+  background-position: -64px -28px;
+  width: 32px;
+  height: 24px;
+}
+.icon-top-boleto {
+  background-image: url(/Custom/Content/Themes/#{$theme-path}/Imagens/sprite.png);
+  background-position: -96px -72px;
+  width: 18px;
+  height: 14px;
+}
+.icon-top-cart {
+  background-image: url(/Custom/Content/Themes/#{$theme-path}/Imagens/sprite.png);
+  background-position: -64px 0px;
+  width: 32px;
+  height: 28px;
+}
+.icon-top-phone {
+  background-image: url(/Custom/Content/Themes/#{$theme-path}/Imagens/sprite.png);
+  background-position: -66px -64px;
+  width: 16px;
+  height: 16px;
+}
+.icon-top-support {
+  background-image: url(/Custom/Content/Themes/#{$theme-path}/Imagens/sprite.png);
+  background-position: 0px -32px;
+  width: 32px;
+  height: 32px;
+}
+.icon-top-tradition {
+  background-image: url(/Custom/Content/Themes/#{$theme-path}/Imagens/sprite.png);
+  background-position: -32px -64px;
+  width: 16px;
+  height: 18px;
+}
+.icon-top-truck {
+  background-image: url(/Custom/Content/Themes/#{$theme-path}/Imagens/sprite.png);
+  background-position: -48px -64px;
+  width: 18px;
+  height: 16px;
+}
+.icon-top-user {
+  background-image: url(/Custom/Content/Themes/#{$theme-path}/Imagens/sprite.png);
+  background-position: -32px 0px;
+  width: 32px;
+  height: 32px;
+}
+.icon-web-page-home {
+  background-image: url(/Custom/Content/Themes/#{$theme-path}/Imagens/sprite.png);
+  background-position: -120px 0px;
+  width: 16px;
+  height: 14px;
+}
+.icon-youtube {
+  background-image: url(/Custom/Content/Themes/#{$theme-path}/Imagens/sprite.png);
+  background-position: 0px -64px;
+  width: 32px;
+  height: 23px;
+}
