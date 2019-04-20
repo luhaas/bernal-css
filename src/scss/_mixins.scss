@@ -108,3 +108,28 @@
     margin: 0;
   }
 }
+
+@mixin arrow($position, $color, $size) {
+  width: 0; 
+  height: 0; 
+  @if $position == 'up' {
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;      
+    border-bottom: $size solid $color;
+  }
+  @if $position == 'down' {
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    border-top: $size solid $color;
+  }
+  @if $position == 'left' {
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;      
+    border-right: $size solid $color; 
+  }
+  @if $position == 'right' {
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;
+    border-left: $size solid $color;
+  }
+}

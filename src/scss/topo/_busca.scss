@@ -21,26 +21,31 @@
     @include round-left(0);
   }
   .suggestion-box {
-    background-color: #fff;
-    padding: 25px;
-    @extend .shaddow !optional;
     .suggestion-box-wrapper {
-      padding: 0;
       border: 0;
       display: flex;
+      background-color: #fff;
+      padding: 25px;
+      @extend .shaddow !optional;
       .suggestion-terms, .suggestion-products {
         .suggestion-title {
           font-family: $font-bold;
           color: $base-color-black;
           font-size: 12px;
           font-weight: normal;
+          padding-bottom: 10px;
           margin: 0;
         }        
       }
       .suggestion-terms {
+        padding-right: 45px;
+        ul {
+          margin: 0 !important;
+        }
         .suggestion-item {
-          color: $font-black;
+          color: $gray-dark;
           font-weight: normal;
+          font-size: 12px;
           line-height: 18px;
           margin: 0;
         }
@@ -50,7 +55,8 @@
           display: flex;
           align-items: center;
           .suggestion-product {
-            border: 0;            
+            border: 0;
+            margin: 0;       
             width: 140px;
             padding: 10px;
             overflow: hidden;

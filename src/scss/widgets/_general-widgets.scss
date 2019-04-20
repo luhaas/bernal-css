@@ -11,17 +11,25 @@
 	&.wd-browsing-product-carousel, &.wd-product-list, &.wd-product-featured-list {
 		margin-top: 30px;
 		.wd-header {
-			padding: 15px;
-			margin-bottom: 10px; 
-			font-size: 2em;
-		    position: relative;
-		    border-bottom: 1px solid $gray-semilight;
-			.wd-icon {
-				&:before {
-					@include aws-icon("\f054");
-				    font-size: 0.8em;
-				    color: $base-color;
-				}
+			display: flex;
+			margin-bottom: 10px;
+			&:after {
+				content: '';
+				display: block;
+				background-image: url('/Custom/Content/themes/#{$theme-path}/Imagens/icon-titulo.png');
+				background-repeat: no-repeat;
+				width: 174px;
+				height: 40px;
+			}
+			.wd-title {
+				width: 996px;
+				height: 40px;
+				color: $font-white;
+				font-family: $font-bold;
+				font-size: 20px;
+				line-height: 40px;
+				padding: 0 25px;
+				background-color: $base-color;
 			}
 		}
 	}
@@ -53,15 +61,16 @@
 		width: auto;
 		margin: 0 10px 0 0;
 	}
+	[data-jcarousel] {
+		padding: 10px 30px;
+	}
 	.jcarousel-control-prev, .jcarousel-control-next {
-		line-height: 60px;
+		width: 30px;
+		height: 90px;
+		background-color: $gray-background;
 		i {
-			color: $base-color;
-			font-size: 30px;
-			top: 15px;
-			&:hover {
-				color: $darken-color;
-			}
+			margin: 0 auto;
+			transform: translate(0, 50%);
 		}
 	}
 }
@@ -115,16 +124,6 @@
 			    }
 		    }
 		}
-	}
-	&:not(.menu-oferta) {
-		
-	img {
-		max-width: 100%;
-		height: auto;
-		@include grid-media($grid-smartphone){
-			width: 100%;
-		}
-	}
 	}
 	&.grid {
 		padding: 0;

@@ -19,10 +19,13 @@
 		}
 	}
 	.jcarousel-control-next, .jcarousel-control-prev {
-		background: transparent;
-		i {
-			font-size: 1em;
-		}
+		background: $gray-dark;
+		width: 28px;
+		height: 34px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		@include round(2px);
 	}
 }
 .wd-product-list-contextual {

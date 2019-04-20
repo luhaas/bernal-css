@@ -98,6 +98,9 @@ body {
 	small {
 		font-size: 12px;
 	}
+	strong {
+		font-family: $font-bold;
+	}
 	.hero {
 		font-size: 54px;
 		font-family: $font-bold;
@@ -124,14 +127,14 @@ body {
 		}
 	}
 	h4, h4 {
-		font-size: 18;
+		font-size: 18px;
 		font-family: $font-regular;
 		small {
 			font-size: 0.9em;
 		}
 	}
 	h5 {
-		font-size: 1em;
+		font-size: 14px;
 		small {
 			font-size: 1em;
 		}
