@@ -57,21 +57,25 @@ header {
 					display: block;
 				}
 			}
-			i.fa-user {
-				font-size: 24px;
-    			padding-right: 5px;
-    			color: $base-color;
-			}
 		}
 		.wd-profile-welcome-shopper {
 			@extend .dropdown-shaddow !optional;
 			@extend .transform-center !optional;
-			top: 30px;
+			top: 60px;
+			right: initial;
 			min-height: 350px;
 			width: 248px;
 			box-sizing: border-box;
-			overflow: hidden;
+			overflow: initial;
 			z-index: 2;
+			&:before {
+				content: '';
+				display: block;
+				@include arrow('top', $font-white, 10px);
+				position: absolute;
+				top: -10px;
+				@extend .transform-center !optional;
+			}
 			.widget-title {
 				@extend .dropdown-title !optional;
 			}
@@ -158,27 +162,6 @@ header {
 					color: darken( $base-color-2, 10% );
 				}
 			}
-		}
-	}
-}
-
-@media screen and (max-width: 992px) {
-	header .links {
-		display: none;
-	}
-	.wd-profile-welcome-shopper {
-		display: none;
-	}
-	#top-search {
-		margin-top: 15px;
-	}
-	.icons-resume {
-		padding: 0;
-		.main-wishlist, .dropdown-cart {
-			padding: 0;
-		}
-		.dropdown-cart {
-			font-size: 1.2em;
 		}
 	}
 }

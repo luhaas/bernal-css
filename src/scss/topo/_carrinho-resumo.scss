@@ -30,15 +30,8 @@
 			> div {
 				display: none;
 			}
-			&:before {
-				content: ':(';
-				font-size: 35px;
-				color: $base-color;
-				padding-bottom: 10px;
-				display: block;
-			}
 			&:after {
-				content:'Seu carrinho está vazio';
+				content: 'Seu carrinho está vazio :(';
 				font-size: 1.5em;
 				line-height: 35px;
 			}
@@ -46,12 +39,20 @@
 	}
 	.wd-widget {
 		@extend .dropdown-shaddow !optional;
-		@extend .transform-center !optional;
 		width: 288px;
 		left: initial !important;
 		right: 0 !important;
+		top: 60px;
 		transform: none !important;
-		top: 50px;
+		overflow: initial;
+		&:before {
+			content: '';
+			display: block;
+			@include arrow('top', $font-white, 10px);
+			position: absolute;
+			top: -10px;
+			right: 0;
+		}
 		.wd-header {
 			@extend .dropdown-title !optional;
 		}
