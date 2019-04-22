@@ -31,15 +31,19 @@ header {
 			position: fixed;
 			top: 0;
 			z-index: 55;
-		    width: 100%;
-		    box-shadow: 1px 1px 1px 1px $gray-semilight;
+			width: 100%;
+			-webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.16);
+			-moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.16);
+			box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.16);
 		}
 	}
 	.main-bar {
-		padding: 20px 0;
+		padding: 15px 0;
 		background: $gray-background;
 		&.simples {
-		    box-shadow: 1px 1px 1px 1px $gray-semilight;
+			-webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.16);
+			-moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.16);
+			box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.16);
 		}
 		.my-account, .attendance {
 			margin-right: 25px;
@@ -163,5 +167,9 @@ header {
 				}
 			}
 		}
+	}
+	.wd-marketing-banner {
+		height: auto !important;
+    line-height: normal !important;
 	}
 }

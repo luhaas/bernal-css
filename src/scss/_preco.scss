@@ -1,60 +1,62 @@
 .wd-product-price-description {
-	margin: 10px 0;
 	.list-price {
+		font-size: 18px;
 		color: $gray-dark;
-		font-size: 0.9em;
-		.prefix {
-
-		}
-		span {
-
-		}
-		&.variation {
-			color: $font-black;
-			span {
-				font-weight: bold;
-				font-size: 1.6em;
-				color: $base-color;
-			}
-		}
+		text-decoration: none;
 	}
 	.sale-price {
-		.prefix {
-			font-size: 1em;
-		}
-		span {
-			font-weight: bold;
-			font-size: 1.4em;
-			color: $base-color;
-		}
+		color: $gray-dark;
 	}
 	.condition {
-		font-size: 1em;
-		line-height: 1.3em;
-		.label {
-
-		}
 		.parcels, .parcel-value {
-			font-weight: bold;
+			font-weight: $font-bold;
 		}
 	}
-	.savings {
-		font-size: 1em;
-		.discount {
-			font-weight: bold;
+	.savings {		
+		font-size: 18px;
+		.instant-price {
+			font-family: $base-color;
 			color: $price-off;
 		}
+	}
+	.discount {
+		background-color: $gray-background;
+		padding: 5px 12px;
+		margin-top: 8px;
 	}
 }
 .wd-product-line {
 	.wd-product-price-description {
-     	height: 75px;
-	}
-}
-.product-detail .head {
-	.sale-price {
-		span {
-			font-size: 2em;
+		height: 125px;
+		padding-top: 20px;
+		position: relative;
+		overflow: initial;
+		.list-price:not(.variation) {
+			font-size: $font-size;
+			position: absolute;
+			top: 0;
+		}
+		.sale-price {
+			font-size: 20px;		
+			strong {
+				color: $font-black;
+			}
+		}
+		.condition {
+			font-size: $font-size;
+			.parcels, .parcel-value {
+				color: $font-black;
+			}
+		}
+		.savings {
+			font-size: $font-size;
+			.instant-price {
+				font-family: $base-color;
+				color: $price-off;
+			}
+		} 
+		.condition {
+			font-size: 12px;
 		}
 	}
 }

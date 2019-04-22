@@ -1,51 +1,121 @@
 #left {
+	width: 235px;
 	padding: 0;
 	margin: 0;
+	margin-right: 15px;
 	.wd-facet-group {
 		.facets {
-			background: #fff;
+			padding: 0;
 			border: 0;
 			@include round(0);
 			.facet-type {
+				background: #fff;
+				margin-bottom: 15px;
 				.facet-type-list {
 					.facet-title {
 						overflow: hidden;
+						color: $gray-dark;
+						font-weight: normal;
+						font-family: $font-bold;
+						font-size: $font-size-16;
+						padding: 15px;
+						border: 0;
 						&::before {
     						display: none;
 						}
 						&::after {
-							@include aws-icon("\f077");
+							content: '';
+							display: block;
+							@extend .icon-arrow-facetas !optional;
 							float: right;
 							position: relative;
-							top: 3px;
+							top: 6px;
 						}
 						&.facet-closed {							
 							&::after {
-								@include aws-icon("\f078");
+								transform: rotate(180deg);
 							}
 						}
 						h3 {
 							float: left;
 						}
 					}
-					.option-title {
-						color: $base-color;
+				}
+				ul {
+					border-top: 1px solid $gray-light;
+					padding: 15px;
+					li {
+						a {
+							@include link($gray-dark, $gray-dark, $gray-dark, none, none, none);
+							display: flex;
+							align-items: center;
+							.option-title {
+								color: $gray-dark;
+							}
+							.option-count {
+								color: $base-color;
+							}
+							&:before {
+								content: '';
+								display: block;
+								width: 16px;
+								height: 16px;
+								border: 1px solid $gray-light;
+								margin-right: 10px;
+							}
+						}
+						&.selected {
+							position: relative;
+							a {
+								.option-title {
+									font-family: $font-bold;
+								}
+								&:before {
+									border-color: $gray-dark;
+								}
+								&:after {
+									content: '';
+									display: block;
+									@extend .icon-checked !optional;
+									position: absolute;
+									top: 5px;
+									left: 4px;
+								}
+							}
+						}
 					}
 				}
 				.facet-type-range .range-wrapper {
-					background: #fff;
 					border: 0;
+					margin: 0;
+					padding: 25px;
+					padding-top: 50px;
+					background: #fff;
+					border-top: 1px solid $gray-light;
+					@include round(0);
 					* {
 						box-shadow: none;
 						color: $font-black;
 					}
+					.min-text, .max-text {
+						bottom: initial;
+						top: -20px;
+						font-size: 12px;
+					}
+					.range2h {
+						background: $gray-light;
+						border: 0;
+					}
 					.handler {
 						.icon {
 							@include round(100%);
-							background-color: $font-white;
+							background-color: $base-color;
 							width: 12px;
 							height: 12px;
-							border: 1px solid $gray-medium;
+							border: 2px solid #fff;							
+							-webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.16);
+							-moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.16);
+							box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.16);
 						}
 					}
 					.defined-range {
@@ -54,88 +124,52 @@
 					.submit {
 						@extend .btn;
 						@extend .btn-wide;
-						margin-top: 35px;
+						font-family: $font-bold !important;
+						font-size: $font-size !important;
+						margin-top: 12px;
+						height: 40px !important;
+					}
+				}
+				.facet-type-rating {
+					.star {
+						.option-title {
+							background: url('/Custom/Content/Themes/#{$theme-path}/Imagens/stars.png');
+							width: 64px;
+							height: 12px;
+							background-position: -65px 0;
+							top: 0;
+						}
+					}
+					.star-1 {
+						.option-title {
+							background-position: -52px 0;
+						}						
+					}
+					.star-2 {
+						.option-title {
+							background-position: -39px 0;
+						}						
+					}
+					.star-3 {
+						.option-title {
+							background-position: -26px 0;
+						}						
+					}
+					.star-4 {
+						.option-title {
+							background-position: -13px 0;
+						}						
+					}
+					.star-5 {
+						.option-title {
+							background-position: 0 0;
+						}						
 					}
 				}
 			}			
 		}
 		.selected-facets {
-			background: $gray-extralight;
-			border: 0;
-			margin: 0;
-			@include round(2px);
-			&::before {
-				text-transform: uppercase;
-				font-size: 0.9em;
-			}
-			.selected-facet {
-				border: 0;
-				border-bottom: 1px solid $gray-light;
-				margin: 0;
-				@include round(0);
-				&:last-child() {
-					border: 0;
-				}
-				.selected-facet-name {
-					background: none;
-				}
-				ul {
-					li {
-						margin-top: 0;
-						margin-bottom: 5px;
-						border: 0;
-						font-weight: normal;
-					}
-				}
-			}
+			display: none;
 		}		
 	}	
-}
-#showFacets {
-	display: none;
-}
-@media screen and(max-width: 992px) {
-	#left {
-		width: 0;
-	    &.active {	 	
-	    	.wd-facet-group {
-		    	position: fixed;
-			    top: 0;
-			    right: 0;
-			    z-index: 99;
-			    width: 100%;
-			    height: 100%;
-			    overflow-y: scroll;
-			    overflow-x: hidden;
-	    	}
-	    }
-	}
-	#showFacets {
-		display: block;
-		width: 100%;
-		position: fixed;
-		bottom: 0;
-		right: 0;
-		z-index: 100;
-		&:after {
-			content: ' Filtrar';
-		}
-		.icon:before {
-			@include aws-icon("\f0b0");
-		}
-		&.active {
-			width: 80px;
-			bottom: initial;
-			top: 0;
-			background-color: transparent;
-			color: $font-black;
-			&:after {
-				content: '';
-			}
-			.icon:before {
-				@include aws-icon("\f00d");
-				font-size: 2em;
-			}
-		}
-	}
 }

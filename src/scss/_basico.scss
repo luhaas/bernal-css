@@ -30,6 +30,7 @@ body {
 		box-sizing: border-box;
 		color: $gray-dark;
 		font-family: $font-regular;
+		font-size: $font-size;
 		background-color: #fff;
 		background-image: none;
 		border: none;
@@ -208,9 +209,9 @@ body {
 	.hide {
 		display: none;
 	}
-	&.columns-2-left {
+	&.columns-2-left:not(.grid-empty) {
 		#content {
-			@include minus($wrapper,180px);
+			@include minus($wrapper,250px);
 			clear: none;
 			#content-wrapper {
 				margin: 0;

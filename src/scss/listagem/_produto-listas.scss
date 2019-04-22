@@ -3,7 +3,7 @@
 		> ul  {
 			li {
 				width: auto;
-				padding: 0;
+				padding: 10px 15px;
 			}
 		}
 	}
@@ -13,7 +13,8 @@
 		.wd-product-list {
 			height: auto;
 			li {
-				@include calculate($wrapper,$qtd-products-vitrine);
+				width: 290px;
+				padding: 10px 11px;
 				margin: 0;
 			}
 		}
@@ -21,7 +22,9 @@
 	.jcarousel-control-next, .jcarousel-control-prev {
 		background: $gray-dark;
 		width: 28px;
-		height: 34px;
+		height: 34px;		
+    top: 50%;
+    transform: translate(0, -50%);
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -111,20 +114,6 @@
 					vertical-align: middle;
 				}
 			}			
-		}
-	}
-}
-
-@media screen and (max-width:575px) {
-	.wd-product-list-contextual {
-		.wd-product-list{
-			li {
-				height: 585px;
-				.medias, .item-description {
-					display: block;
-					width: 100%;
-				}	
-			}
 		}
 	}
 }
