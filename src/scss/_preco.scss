@@ -3,6 +3,12 @@
 		font-size: 18px;
 		color: $gray-dark;
 		text-decoration: none;
+		&.variation {
+			span {
+				color: $font-black;
+				font-family: $font-bold;
+			}
+		}
 	}
 	.sale-price {
 		color: $gray-dark;
@@ -23,6 +29,7 @@
 		background-color: $gray-background;
 		padding: 5px 12px;
 		margin-top: 8px;
+		font-size: 12px;
 	}
 }
 .wd-product-line {
@@ -36,7 +43,7 @@
 			position: absolute;
 			top: 0;
 		}
-		.sale-price {
+		.sale-price, .list-price.variation {
 			font-size: 20px;		
 			strong {
 				color: $font-black;
@@ -57,6 +64,13 @@
 		} 
 		.condition {
 			font-size: 12px;
+		}
+	}
+}
+.wd-browsing-grid-list {
+	.wd-product-line {
+		.discount {
+			padding: 5px;
 		}
 	}
 }

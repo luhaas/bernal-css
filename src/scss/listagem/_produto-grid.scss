@@ -6,6 +6,9 @@
 		.wd-widget {
 			overflow: initial;
 		}
+		.wd-header {
+			display: none;
+		}
 		.wd-browsing-grid-sorter {
 			width: 250px;
 			position: initial;
@@ -29,6 +32,9 @@
 			}
 		}
 		.wd-browsing-grid-pager {
+			.description {
+				padding: 0;
+			}
 			.product-count {
 				span {
 					font-weight: normal;
@@ -90,6 +96,19 @@
 					padding: 0;
 					padding-right: 6px;
 					margin-bottom: 0;
+					.wd-product-line {
+						.name {
+							padding: 15px;
+							height: 81px;
+						}
+						.media {
+							padding: 15px;
+						}
+						.more-infos {
+							padding: 15px;
+							padding-bottom: 20px;
+						}
+					}
 				}
 			}
 			#back-to-top {
@@ -122,24 +141,37 @@
 			}
 		}
 	}
+	h1 {
+		color: $font-black;
+		margin-top: 0;
+		margin-bottom: 5px;
+	}
 	.page-description {
-		display: flex;
+		margin-bottom: 15px;
 		.banner {
 			position: relative;
-			h2 {
+			display: inline-block;
+			float: left;
+			h1 {
 				width: 100%;
 				text-align: center;
 				color: $font-white;
+				text-shadow: 2px 2px 3px rgba(0,0,0,.32);
 				margin: 0;
 				position: absolute;
 				top: 50%;
 				transform: translate(0, -50%);
+			}
+			.wd-marketing-banner .banner-wrapper img {
+				width: auto;
 			}
 		}
 		.text-category {
 			font-size: $font-size-16;
 			line-height: 20px;
 			text-align: justify;
+			display: inline-block;
+			max-width: 500px;
 			.text {
 				margin: 20px 0 20px 30px;
 			}
@@ -154,12 +186,24 @@
 						content: 'Ver mais';
 						font-size: 12px;
 					}
+					&:after {
+						transform: none;
+					}
 				}
 			}
 			.see-more {
+				display: flex;
+				align-items: center;
 				float: right;
 				font-size: 12px;
 				@include link($font-black, $font-black, $font-black);
+				&:after {
+					content: '';
+					display: block;
+					margin-left: 5px;
+					@extend .icon-see-more !optional;
+					transform: rotate(180deg);
+				}
 			}
 		}
 	}

@@ -65,7 +65,10 @@
 		}
 		&.last {
 			font-family: $font-regular;
-			color: $base-color;	
+			color: $base-color;
+			* {
+				font-family: $font-regular;
+			}
 		}
 	}
 }
