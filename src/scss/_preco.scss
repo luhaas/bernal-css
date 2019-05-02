@@ -67,6 +67,18 @@
 		}
 	}
 }
+.product-detail .product-price {
+	font-size: 18px;
+	.wd-product-price {
+		width: max-content;
+	}
+	.discount {
+		background-color: $gray-light;
+		font-size: 14px;
+		padding: 10px 15px;
+		margin-top: 15px;
+	}
+}
 .wd-browsing-grid-list {
 	.wd-product-line {
 		.discount {

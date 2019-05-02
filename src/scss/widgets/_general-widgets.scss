@@ -1,5 +1,5 @@
 .wd-widget {
-	overflow: hidden;
+	// overflow: hidden;
 	.wd-header {
 	    span.wd-icon {
 	    	display: inline-block;
@@ -8,7 +8,10 @@
 			display: inline-block;
 		}
 	}
-	&.wd-browsing-product-carousel, &.wd-product-list, &.wd-product-featured-list {
+	&.wd-browsing-product-carousel,
+	&.wd-product-list,
+	&.wd-product-featured-list,
+	&.wd-product-associations:not(.cross-sell):not(.upsell) {
 		margin-bottom: 60px;
 		.wd-header {
 			display: flex;
@@ -31,6 +34,15 @@
 				padding: 0 25px;
 				background-color: $base-color;
 			}
+		}
+	}
+}
+.cross-sell, .wd-product-reviews {
+	.wd-header {
+		.wd-title {
+			font-size: 24px;
+			font-family: $font-bold;
+			color: $base-color;
 		}
 	}
 }

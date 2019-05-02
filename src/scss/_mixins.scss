@@ -133,3 +133,9 @@
     border-left: $size solid $color;
   }
 }
+
+@mixin shadow($x, $y, $b, $opacity) {
+  -webkit-box-shadow: $x $y $b rgba(0,0,0,$opacity);
+  -moz-box-shadow: $x $y $b rgba(0,0,0,$opacity);
+  box-shadow: $x $y $b rgba(0,0,0,$opacity);
+}

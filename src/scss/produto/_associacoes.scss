@@ -19,78 +19,151 @@
 				}
 			}
 		}
-		&:not(.cross-sell) {
+		&:not(.cross-sell):not(.upsell) {
 			.wd-header {
-		    	padding: 20px;
-		    	.wd-title {
-		    		font-size: 1.8em;
-		    	}
-		    }
+				padding: 0 20px;
+				.wd-title {
+					font-size: 20px;
+				}
+			}
 		}
-		&.cross-sell{
+		&.cross-sell {
+			overflow: initial;
 			.wd-content {
 				form  {
+					display: flex;
+					justify-content: space-between;
 					ul {
+						display: flex;
+						overflow: initial;
 						li {
-							&.first {
-								position: relative;
-								&::after {
-									content: '+';
-									font-size: 4em;
-									position: absolute;
-									right: -16px;
-									top: 30%;
-								}
+							width: 270px;
+							margin-right: 35px;
+							@include shadow(3px, 3px, 16px, 0.12);
+							.wd-product-price-description {
+								height: auto;
 							}
 						}
 					}
+					.operator-icon {
+						position: relative;
+						top: 50%;
+						transform: translateY(-50%);
+						width: 50px;
+						height: 50px;
+						margin-right: -12px;
+						margin-left: -44px;
+						z-index: 2;
+						background-color: $base-color;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						@include round(2px);
+						@include shadow(0px, 0px, 6px, 0.16);
+					}
 					.cross-sell-footer {
+						display: flex;
+						align-items: center;
+						width: 270px;
 						background-color: #fff;
-	     				padding-top: 80px;
-	     				text-align: center;
-	     				position: relative;
-	     				&::before {
-	     					content: '=';
-							font-size: 4em;
+						padding: 25px;
+						padding-top: 65px;
+						margin: 30px 0;
+						text-align: center;
+						position: relative;
+						overflow: initial;
+						@include shadow(3px, 3px, 16px, 0.12);
+						.no-variation-selected {
+							font-size: 1.3em;
+							height: auto;
+							line-height: initial;
+							margin: 0;
+							position: initial;
+						}
+						.btn-buy, .total {
+							float: none;
+						}
+						.total {
+							text-align: center;
+						}
+						.btn-buy {							
+							width: 100%;
 							position: absolute;
-							left: -20px;
-							top: 30%;
-							@include grid-media($grid-smartphone){
-								display:none;
-							}
-	     				}
-	     				@include grid-media($grid-smartphone){
-	     					padding-top: 20px;
-	     					background-color: $gray-light;
-	     				}
-	     				.no-variation-selected {
-	     					font-size: 1.3em;
-	     					height: auto;
-	     					line-height: initial;
-	     					margin: 0;
-	     					position: initial;
-	     				}
-	     				.btn-buy, .total {
-	     					float: none;
-	     				}
-	     				.total {
-	     					text-align: center;
-	     				}
+							left: 0;
+							bottom: 0;
+							margin: 0;
+						}
 					}
 				}			
 			}
 		}	
+		&.upsell {
+			.wd-header {
+				display: none;
+			}
+			.wd-content {
+				@include shadow(0px, 3px, 6px, 0.16);
+				ul {
+					margin: 0;
+					padding: 0;
+					li {
+						width: 215px;
+						margin: 0;
+						border-bottom: 1px solid #C9C9C9;
+						&:last-child {
+							border: 0;
+						}
+						.name {
+							padding: 15px;
+							background-color: $gray-light;
+							height: auto;
+							font-size: 13px;
+							font-family: $font-regular;
+						}
+						.media {
+							border: 0;
+							padding-bottom: 0;
+							a.thumb {
+								width: 108px !important;
+								max-height: 108px !important;
+								margin: 0 auto;
+								img {
+									border: 1px solid #CFCFCF;
+								}
+							}
+						}
+						.more-infos {
+							padding: 10px 20px;
+							.wd-product-rating {
+								position: initial;								
+    						text-align: center;								
+							}
+							.wd-product-price-description {
+								padding-top: 5px;
+								height: auto;
+								text-align: center;
+								* {
+									font-size: 12px;
+									color: $font-black;
+								}
+								.list-price {
+									.prefix, span {
+										color: #A7A7A7;
+									}
+								}
+								.savings .instant-price {
+									font-size: $font-size;
+								}
+							}
+							.logo-brand {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
 	}
-}
-.wd-product-reviews.wd-widget, .wd-product-associations.wd-widget.cross-sell {
-	border: 1px solid $gray-medium;
-    .wd-header {
-    	background-color: $gray-light;
-    	padding: 20px;
-    	.wd-title {
-    		font-size: 1.8em;
-    	}
-    }
 }
 
 .wd-product-reviews {
