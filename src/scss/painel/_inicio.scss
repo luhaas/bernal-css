@@ -3,13 +3,8 @@
 
 	background-color: #fff;
 	margin: 3px;
-	box-shadow: 1px 1px 1px 1px $gray-medium;
-	@media screen and (min-width: $breakpoint-mobile) {
-		padding: 25px;
-	}
-	@media screen and (max-width: $breakpoint-mobile) {
-		padding: 15px;
-	}
+	border: 1px solid #CBCBCB;
+	padding: 25px;
 }
 .area-profile {
 	.wd-checkout-ordersummary.short-mode,
@@ -96,23 +91,25 @@
 			padding: 10px 0;
 			display: none;
 		}
+		h5 {
+			color: $base-color;
+		}
 		nav {
+			background-color: #fff;
 			ul {
 				li {
 					margin: 0;
 					padding: 0;
 					a {
-						padding: 15px 0;
+						padding: 15px;
 						display: block;
-					    border-bottom: 1px solid $gray-semilight;
-					    position: relative;
-					    display: block;
-					    cursor: pointer;
-
-					    &.current {
-					    	font-weight: bold;
-					    	border-bottom: 2px solid $base-color;
-					    }
+						border-bottom: 1px solid $gray-semilight;
+						position: relative;
+						cursor: pointer;
+						@include link($gray-dark, $gray-dark, $gray-dark, none, none, underline);
+						&.current {
+							font-family: $font-bold;
+						}
 					}
 					&.sign-out {
 						a {

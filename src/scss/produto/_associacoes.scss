@@ -43,6 +43,12 @@
 							.wd-product-price-description {
 								height: auto;
 							}
+							.cross-sell-variations {
+								select {
+									border: 1px solid $gray-medium;
+									height: 40px;
+								}
+							}
 						}
 					}
 					.operator-icon {
@@ -67,7 +73,7 @@
 						width: 270px;
 						background-color: #fff;
 						padding: 25px;
-						padding-top: 65px;
+						padding-bottom: 50px;
 						margin: 30px 0;
 						text-align: center;
 						position: relative;
@@ -84,7 +90,32 @@
 							float: none;
 						}
 						.total {
+							width: 100%;
 							text-align: center;
+							margin: 0;
+							line-height: 1em;
+							.total-header {
+								color: $font-black;
+								.h2 {
+									margin-bottom: 10px;
+								}
+								span {
+									font-size: $font-size-16;
+								}
+								i {
+									margin: 30px 0;
+								}
+							}
+							.asyncprice-area {
+								margin: 0;
+								.sale-price {
+									span {
+										color: $font-black;
+										font-size: 24px;
+										padding-left: 5px;
+									}
+								}
+							}
 						}
 						.btn-buy {							
 							width: 100%;

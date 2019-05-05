@@ -203,12 +203,19 @@
 				}
 				.wd-buy-button {
 					width: 100%;
-					margin: 15px 0;
+					margin: 0 0 10px;
 					.btn-buy {
 						@extend .btn-wide;
 						max-width: 470px;
 						height: 64px;
 						font-size: 24px;
+					}
+				}
+				.seguranca {
+					font-family: $font-bold;
+					font-size: $font-size-16;
+					i {
+						margin-right: 5px;
 					}
 				}
 				.wd-product-oneclickbuy, .wd-product-oneclickbuy > div{
@@ -228,7 +235,7 @@
 			}
 			.wd-product-deliveryfee {
 				width: 100%;
-				margin-top: 45px;
+				margin-top: 25px;
 				form {
 					display: flex;
 				}
@@ -237,6 +244,7 @@
 					align-items: center;
 					position: relative;
 					label {
+						font-family: $font-regular;
 						font-size: 18px;
 						font-weight: normal;
 						color: $font-black;
@@ -245,9 +253,9 @@
 					}
 					input {
 						width: 222px;
-						@extend .shaddow !optional;
-						padding: 10px 15px 10px 48px;
 						height: 40px;
+						padding: 10px 15px 10px 48px;
+						@include shadow(2px, 2px, 6px, 0.16);
 					}
 					&:after {
 						content: '';
@@ -268,7 +276,7 @@
 						text-transform: uppercase;
 						font-family: $font-bold;
 						font-size: $font-size-16;
-						@extend .shaddow !optional;
+						@include shadow(2px, 2px, 6px, 0.16);
 						@include round-left(0);
 					}
 				}
@@ -327,8 +335,17 @@
 				.rating {
 					padding-top: 5px;
 				}
-				.wd-product-deliveryfee .input-wrapper input {
-					width: 170px;
+				.wd-product-deliveryfee .input-wrapper {
+					label {
+						font-size: 17px;
+						padding-right: 10px;
+					}
+					input {
+						width: 170px;
+					}
+					&:after {
+						left: 125px;
+					}
 				}
 			}
 		}

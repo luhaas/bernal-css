@@ -22,7 +22,7 @@
 				padding-right: 35px;
 				font-size: $font-size;
 				-webkit-appearance: none;
-				@extend .shaddow !optional;
+				@include shadow(2px, 2px, 6px, 0.16);
 			}
 			&:after {
 				content: '';

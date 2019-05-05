@@ -14,7 +14,7 @@
         figure {
             margin: -10px 0;
             img {
-                @extend .shaddow !optional;
+                @include shadow(3px, 3px, 10px, 0.16);
             }            
         }
         .content {            
@@ -94,7 +94,7 @@
             }
         }
     	.atendimento  {
-            @extend .shaddow !optional;
+            @include shadow(0, 3px, 10px, 0.16);
             background-color: #fff;
             width: 370px;
             margin-left: 18px;

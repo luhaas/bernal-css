@@ -271,7 +271,7 @@
 				}
 				&:hover {
 					background-color: #fff;
-					@extend .shaddow !optional;					
+					@include shadow(0, 3px, 10px, 0.24);					
 					.menu-wrapper {
 						display: flex;
 					}

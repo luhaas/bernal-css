@@ -2,7 +2,7 @@
 	height: 100%;
 	position: relative;
 	background-color: #fff;
-	@extend .shaddow !optional;
+	@include shadow(3px, 3px, 6px, 0.12);
 	.name {
 		font-size: $font-size;
 		line-height: 18px;
@@ -59,6 +59,7 @@
 		}
 	}
 	&:hover {
+		@include shadow(5px, 5px, 20px, 0.24);
 		.wd-buy-button {
 			display: block;
 		}

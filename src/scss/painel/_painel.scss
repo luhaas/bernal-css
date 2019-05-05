@@ -8,13 +8,18 @@
 			padding: 25px;
 			margin: 30px;
 		}
-	}
+    }
 	span.error {
 		color: darken($danger, 40% );
 		display: inline-block;
 		padding: 5px;
 	}
 	#middle {
+        .input-wrapper {
+            input, select {
+                border: 1px solid $gray-medium;
+            }
+        }   
 	}
 	&:not(.page-login):not(.page-register) {
 		#content {
@@ -26,8 +31,9 @@
 			#content-wrapper {
 				margin: 0;				
 				.wd-title {
-					font-size: 1.6em;
-					font-weight: bold;
+                    font-size: 32px;
+                    font-family: $font-bold;
+                    color: $base-color;
 				}
 			}
 		}
@@ -42,14 +48,7 @@
     }
     .center-box {
         background-color: #fff;
-        box-shadow: 1px 1px 1px 1px $gray-medium;
-        @media screen and (min-width: $breakpoint-mobile) {
-            padding: 25px;
-            margin: 30px;
-        }
-        @media screen and (max-width: $breakpoint-mobile) {
-            padding: 25px;
-        }
+        border: 1px solid #CBCBCB;
     }
     span.error {
         color: darken( $danger, 40% );

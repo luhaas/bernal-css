@@ -62,16 +62,11 @@ body {
 	.border {
 		border: 1px solid $gray-medium;
 	}
-	.shaddow {
-		-webkit-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.12);
-		-moz-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.12);
-		box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.12);
-	}
 	.dropdown-shaddow {
 		display: none;
 		position: absolute;
 		background-color: #fff;
-		@extend .shaddow !optional;
+		@include shadow(0, 0, 10px, 0.24);
 	}
 	.transform-center {
 		left: 50%;
@@ -208,6 +203,11 @@ body {
 	}
 	.hide {
 		display: none;
+	}
+	&.BasketIndexRoute {
+		.wd-browsing-breadcrumbs {
+			display: none;
+		}
 	}
 	&.columns-2-left:not(.grid-empty) {
 		#content {

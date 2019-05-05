@@ -2,20 +2,25 @@
 	max-width: 300px;
 	.the-modal-container {
 		background: $font-white;
-	    height: 100%;
-	    padding: 35px;
-	    .wd-header {
-	    	margin-bottom: 20px;
-	    	.wd-title {
-	    		font-size: 2em;
-	    	}
-	    }
-	    .wd-subtitle {
-	    	font-size: 1.3em;
-	    	padding: 15px 0;
-	    }
-		.btn {
-			margin-top: 10px;
+		height: 100%;
+		padding: 35px;
+		.wd-header {
+			margin-bottom: 20px;
+			.wd-title {
+				@extend .h2 !optional;
+				color: $base-color;
+			}
+		}
+		.wd-subtitle {
+			font-size: 1.3em;
+			padding: 15px 0;
+		}
+		button, .btn {
+			margin: 10px auto;
+			display: block;
+		}	
+		input, textarea {
+			border: 1px solid $gray-medium;
 		}
 	}
 }
@@ -39,7 +44,7 @@
 	.the-modal.opened {
 		max-width: 600px;
 		.the-modal-container, #iframe-modal {
-			min-height: 500px;
+			min-height: 150px;
 		}
 	}
 	img {
@@ -57,9 +62,6 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
-			}
-			input, textarea {
-				@include shadow(2px, 2px, 6px, 0.12);
 			}
 			input, textarea, .rating {
 				width: 350px;

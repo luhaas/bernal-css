@@ -5,11 +5,12 @@
 				display: none;
 			}
 			.wd-title {
-				@extend h2;
+				@extend h1;
+				color: $base-color;
 			}
 		}
 		.wd-subtitle {
-			@extend h3;
+			@extend h2;
 		}
 		fieldset {
 			.input-wrapper:not(.customer-type-person) {

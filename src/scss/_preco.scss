@@ -31,6 +31,14 @@
 		margin-top: 8px;
 		font-size: 12px;
 	}
+	.asyncprice-area {
+		margin: 0;
+		.sale-price {
+			em {
+				font-family: $font-regular;
+			}
+		}
+	}
 }
 .wd-product-line {
 	.wd-product-price-description {
@@ -44,8 +52,8 @@
 			top: 0;
 		}
 		.sale-price, .list-price.variation {
-			font-size: 20px;		
-			strong {
+			font-size: 20px;
+			strong, span {
 				color: $font-black;
 			}
 		}
