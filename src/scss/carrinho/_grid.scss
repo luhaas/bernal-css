@@ -1,13 +1,16 @@
 .wd-checkout-basket-grid {
 	.grid {
-		border: 1px solid $gray-semilight;
+		background-color: #fff;
+		@include shadow(5px, 3px, 16px, 0.16);
 
 		.grid-title {
-			background-color: $gray-extralight;
+			background-color: $gray-medium;
 			li {
-				font-weight: bold;
-				padding: 5px 30px;
+				font-family: $font-bold;
+				font-size: 20px;
+				color: $font-white;
 				text-align: center;
+				padding: 5px 25px;
 				&.product {
 					text-align: left;
 				}
@@ -18,24 +21,38 @@
 		}
 		.grid-informations {
 			.item {
-				border-bottom: 1px solid $gray-semilight;
-				margin-bottom: 0;
-				li.product {
-					padding: 0;
+				border-bottom: 1px solid $gray-light;
+				margin: 0;
+				padding: 0;
+				> ul {
+					> li {
+						padding: 0 25px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						&.subtotal {
+							justify-content: flex-end;
+						}
+					}
 				}
 				.photo {
 					margin: 0;
 					img {
-						max-width: 100%;
+						max-width: 80px;
 						height: auto;
 					}
 				}
 				.data {
-					display: inline-block;
-					padding-left: 15px;
+					padding-left: 25px;
 					a {
 						display: block;
-						padding-bottom: 10px;
+						padding-bottom: 5px;
+						@include link($font-black, $font-black, $font-black, none, none, underline);
+						font-family: $font-medium;
+						font-size: $font-size-16;
+						&.brand-name {
+							text-transform: uppercase;
+						}
 					}
 					.warning {
 						@extend .alert;
@@ -48,20 +65,47 @@
 					@include flag(inline);
 				}
 				.price {
-					text-align: center;
+					font-size: 18px;
+					font-family: $font-medium;
 					del {
-						color: $gray-dark;
-						font-size: 0.8em;
+						color: $gray-medium;
 					}
 				}
 				.quantity {
 					text-align: center;
 					.change {
-						@include input-quantity(34px,0.71em 0.9em,50px,36px);
+						width: 120px;
+						height: 40px;
+						border: 1px solid $gray-dark;
+						@include round(2px);
+						display: flex;
+						align-items: center;
+						button, input {
+							background-color: transparent;
+						}
+						button {
+							width: 40px;
+							height: 40px;
+							padding: 0 14px;
+							&[disabled] {
+								-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  							filter: grayscale(100%);
+							}
+						}
+						input {
+							height: 40px;
+							padding: 0;
+							margin: 0;
+							font-size: 18px;
+							font-family: $font-medium;
+						}
+						// @include input-quantity(40px,15px,50px,40px);
 					}
 				}
 				.subtotal {
-					text-align: right;
+					font-size: 18px;
+					color: $base-color-black;
+					font-family: $font-medium;
 				}
 			}
 			.nested-grid {
@@ -109,18 +153,16 @@
 					}
 				}
 			}
-			.bottom-grid {
-				.text-subtotal, .subtotal {
-					text-align: right;
-					strong {
-						font-size: 1.4em;
-					}
-				}
-				.bt-clear-basket {
-					padding: 10px 0;
-
-				}	
-			}			
 		}
 	}
+	.bottom-grid {
+		padding: 10px 40px 15px;
+		.text-subtotal, .subtotal {
+			font-size: 20px;
+			color: $base-color-black;
+		}
+		.subtotal {
+			text-align: right;
+		}
+	}			
 }
