@@ -148,9 +148,13 @@
 						font-family: $font-medium;
 						color: $font-white;
 						font-size: $font-size;
-						padding: 10px;
-						display: block;
+						padding: 0 10px 7px;
 						text-decoration: none;
+						display: flex;
+						flex-direction: column;
+						justify-content: flex-end;
+						align-items: center;
+						height: 64px;
 						.icon:before {
 							content: '';
 							display: block;
@@ -162,59 +166,58 @@
 				&:first-child {
 					a {
 						.icon:before {
-							@extend .icon-menu-pillow !optional;
+							@extend .icon-menu-drywall !optional;
 						}
 					}
 				}
 				&:nth-child(2) {
 					a {
 						.icon:before {
-							@extend .icon-menu-drill !optional;
+							@extend .icon-menu-wheelbarrow !optional;
 						}
 					}
 				}
 				&:nth-child(3) {
 					a {
 						.icon:before {
-							@extend .icon-menu-light !optional;
+							@extend .icon-menu-paint-bucket !optional;
 						}
 					}
 				}
 				&:nth-child(4) {
 					a {
 						.icon:before {
-							@extend .icon-menu-wheelbarrow !optional;
+							@extend .icon-menu-drill !optional;
 						}
 					}
 				}
 				&:nth-child(5) {
 					a {
 						.icon:before {
-							@extend .icon-menu-plug !optional;
+							@extend .icon-menu-oil !optional;
 						}
 					}
 				}
 				&:nth-child(6) {
 					a{
 						.icon:before {
-							@extend .icon-menu-oil !optional;
+							@extend .icon-menu-plug !optional;
 						}
 					}
 				}
 				&:nth-child(7) {
 					a {
 						.icon:before {
-							@extend .icon-menu-floor !optional;
+							@extend .icon-menu-garden !optional;
 						}
 					}
 				}
 				&:nth-child(8) {
 					a {
 						.icon:before {
-							@extend .icon-menu-paint-bucket !optional;
+							@extend .icon-menu-housewares !optional;
 						}
 					}
-					
 				}
 				&:nth-child(9) {
 					a {
@@ -281,59 +284,58 @@
 					&:first-child {
 						a {
 							.icon:before {
-								@extend .icon-menu-pillow-hover !optional;
+								@extend .icon-menu-drywall-hover !optional;
 							}
 						}
 					}
 					&:nth-child(2) {
 						a {
 							.icon:before {
-								@extend .icon-menu-drill-hover !optional;
+								@extend .icon-menu-wheelbarrow-hover !optional;
 							}
 						}
 					}
 					&:nth-child(3) {
 						a {
 							.icon:before {
-								@extend .icon-menu-light-hover !optional;
+								@extend .icon-menu-paint-bucket-hover !optional;
 							}
 						}
 					}
 					&:nth-child(4) {
 						a {
 							.icon:before {
-								@extend .icon-menu-wheelbarrow-hover !optional;
+								@extend .icon-menu-drill-hover !optional;
 							}
 						}
 					}
 					&:nth-child(5) {
 						a {
 							.icon:before {
-								@extend .icon-menu-plug-hover !optional;
+								@extend .icon-menu-oil-hover !optional;
 							}
 						}
 					}
 					&:nth-child(6) {
-						a {
+						a{
 							.icon:before {
-								@extend .icon-menu-oil-hover !optional;
+								@extend .icon-menu-plug-hover !optional;
 							}
 						}
 					}
 					&:nth-child(7) {
 						a {
 							.icon:before {
-								@extend .icon-menu-floor-hover !optional;
+								@extend .icon-menu-garden-hover !optional;
 							}
 						}
 					}
 					&:nth-child(8) {
 						a {
 							.icon:before {
-								@extend .icon-menu-paint-bucket-hover !optional;
+								@extend .icon-menu-housewares-hover !optional;
 							}
 						}
-						
 					}
 					&:nth-child(9) {
 						a {

@@ -108,7 +108,7 @@
                 }
             }
             ul {
-                padding: 30px 30px 30px 70px;
+                padding: 30px;
                 li {
                     display: flex;
                     margin: 0;
@@ -120,6 +120,7 @@
                         padding-left: 15px;
                         font-family: $font-medium;
                         font-size: $font-size-16;
+                        white-space: nowrap;
                         @include link($font-black, $font-black, $font-black, none, none, none);
                     }
                 }

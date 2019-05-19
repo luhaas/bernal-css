@@ -1,19 +1,70 @@
 .LoginRoute {
-	button[name="Login.Submit"], .recover-password-button  {
+	h1 {
+		color: $base-color-black;
+    margin: 35px 0;
+	}
+	h2 {
+		color: $base-color;
+		font-size: 32px;
+		margin-top: 0;
+		margin-bottom: 5px;
+	}
+	p {
+		font-size: 16px;
+		margin-bottom: 25px;
+	}
+	#footer {
+		margin-top: 100px;
+	}
+	.content-box {
+		background-color: #fff;
+		padding: 100px 0;
+		> div {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			.col-box {
+				max-width: 310px;
+				text-align: center;
+				input, button, .btn {
+					width: 300px;
+					height: 50px;
+					font-size: 18px;
+					font-family: $font-medium;
+				}
+				input.error {
+					border-color: $base-color !important;
+				}
+				.icon-register {
+					margin: 0 auto 20px;
+				}
+				.js-login-recoverpassword {
+					display: block;
+					margin-top: 20px;
+					font-family: $font-bold;
+				}
+				.register-now {
+					@include link($font-white, $font-white, $font-white, none, none, none);
+					line-height: 50px;
+				}
+				.js-login {
+					label {
+						display: none;
+					}
+				}
+			}
+			&:first-child {
+				border-right: 1px solid #CBCBCB;
+			}
+		}
+	}
+	.recover-password-button  {
 		@extend .btn-wide;
 		margin: 20px auto;
 		display: block;
 	}
-	.js-login-recoverpassword {
-		display: block;
-		text-align: center;
-		margin: 0 auto 20px;
-	}
-	.register-now {
-		@extend .btn-outline;
-		max-width: 200px;
-		display: block;
-		text-align: center;
-		margin: 0 auto 20px;
+	button[name="Login.Submit"] {
+		margin-top: 15px;
 	}
 }
