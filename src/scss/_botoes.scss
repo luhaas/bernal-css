@@ -32,16 +32,15 @@
     	font-size: 0.75rem;
     }
 	&.btn-outline {
-		background: $font-white;
-		border: 1px solid $base-color-green;
-		color: $base-color-green;
+		background: transparent;
+		border: 1px solid $gray-dark;
+		color: $gray-dark;
+		font-size: 14px;
 		&:active {
-			background: tint($font-black, 60%);
-    		color: $base-color-green;
+    		background-color: $gray-light;
 		}
 		&:hover {
-		    background: tint($font-black, 90%);
-		    color: $base-color-green;
+    		background-color: $gray-light;
 		}
 	}
 	&.btn-big {
