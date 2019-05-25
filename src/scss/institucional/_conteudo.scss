@@ -1,0 +1,84 @@
+.ContentRoute {
+  #middle {
+    padding-top: 0;
+  }
+  .cms-content {
+    header {
+      background-image: linear-gradient(
+        rgba(194, 25, 31, 0.9), 
+        rgba(194, 25, 31, 0.9),
+      ), url('/custom/content/themes/#{$theme-path}/imagens/conteudo-bg.png');
+      background-repeat: no-repeat;
+      background-position: center center;
+      height: 250px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      h1 {
+        font-size: 54px;
+        color: $base-color-2;
+      }
+      .wd-browsing-breadcrumbs li {
+        *, &:after {
+          color: $font-white;
+        }
+        &.first {
+          a:before {
+            @extend .icon-home-white !optional;
+          }
+        }
+        &.last * {
+          font-family: $font-bold;
+        }
+      }
+    }
+    .cms-page {
+      display: grid;
+      grid-template-columns: 270px 870px;
+      column-gap: 30px;
+      padding: 40px 0;
+      font-size: 18px;
+      p {
+        font-size: 18px;
+      }
+    }
+    .cms-menu {
+      ul {
+        > li {
+          background-color: #fff;
+          margin-top: 0;
+          margin-bottom: 15px;
+          > span {
+            display: block;
+            color: $base-color;
+            font-size: $font-size-16;
+            font-family: $font-bold;
+            padding: 15px 25px;
+            border-bottom: 1px solid $gray-light;
+          }
+          ul {
+            padding: 30px;
+            li {
+              margin-top: 0;
+              margin-bottom: 15px;
+              a {
+                @include link($gray-dark, $gray-dark, $gray-dark, none, underline, underline);
+              }
+              &.current {
+                a {
+                  font-family: $font-bold;
+                  @include link($base-color-black, $base-color-black, $base-color-black, none, underline, underline);
+                }
+              }
+              &:last-child {
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
