@@ -25,6 +25,8 @@
 @mixin wrapper-width($width: $wrapper) {
   width: $width;
   max-width: $width;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
 }
 
 /* calcula a largura de um elemento dividindo a quantidade de itens pela largura total disponível */

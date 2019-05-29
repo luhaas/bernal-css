@@ -3,11 +3,8 @@
 		display: none;
 	}
 	.center-box {
-		background-color: #fff;
-		@media screen and (min-width: $breakpoint-mobile) {
-			padding: 25px;
-			margin: 30px;
-		}
+        background-color: #fff;
+        padding: 25px;
     }
 	span.error {
 		color: darken($danger, 40% );
@@ -48,7 +45,6 @@
     }
     .center-box {
         background-color: #fff;
-        border: 1px solid #CBCBCB;
     }
     span.error {
         color: darken( $danger, 40% );

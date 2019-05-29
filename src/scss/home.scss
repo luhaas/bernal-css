@@ -10,9 +10,6 @@
 	.wd-brand-carousel {
 		margin-bottom: 60px;
 	}
-	.wd-browsing-product-carousel.wd-widget-js {
-		@extend .wrapper !optional;
-	}
 	.banners-hover {
 		background-image: url('/Custom/Content/themes/#{$theme-path}/Imagens/bg-categories-hover.png');
 		background-repeat: no-repeat;

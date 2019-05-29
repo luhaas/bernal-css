@@ -58,18 +58,15 @@
 	.the-modal {
 		max-width: 500px;
 		.wd-product-reviews.wd-product-reviews-create {
-			.input-wrapper, .avaliacao {
-				display: flex;
-				align-items: center;
-				justify-content: center;
+			textarea {
+				width: 100%;
 			}
-			input, textarea, .rating {
-				width: 350px;
-				margin: 0;
-			}
-			label, b {
-				width: 100px;
+			b {
 				margin-right: 15px;
+				text-align: left;
+				width: auto;
+				font-size: 18px;
+				font-family: $font-medium;
 			}
 			.button-wrapper {
 				text-align: center;

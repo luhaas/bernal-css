@@ -48,11 +48,6 @@
 					@include link($font-white, $font-white, $font-white, none, none, none);
 					line-height: 50px;
 				}
-				.js-login {
-					label {
-						display: none;
-					}
-				}
 			}
 			&:first-child {
 				border-right: 1px solid #CBCBCB;

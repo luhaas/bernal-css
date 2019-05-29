@@ -4,7 +4,7 @@
 		grid-template-columns: 1fr 1fr;
 		grid-gap: 30px;
 	}
-	.input-wrapper {
+	.input-wrapper.customPlaceholder {
 		position: relative;
 		margin-bottom: 0;
 		input, select, textarea {
@@ -14,40 +14,26 @@
 			color: $base-color-black;
 			height: 60px;
 			margin: 0;
-			@include round(2px);
 			&.error {
 				border-color: $base-color;
 			}
 		}
-		span.error {
-			display: block !important;
-			color: $base-color;
+		span {
+			font-size: 12px;
+			&.error {
+				display: block !important;
+				color: $base-color;
+			}
 		}
 		textarea {
 			height: 300px;
 			margin-top: 20px;
 		}
-		.placeholder {
-			position: absolute;
+		label {
 			top: 18px;
-			left: 15px;
-			width: auto;
-			color: $gray-dark;
-			font-size: 18px;
-			font-family: $font-medium;
-			-webkit-box-sizing: border-box;
-			box-sizing: border-box;
-			pointer-events: none;
-			z-index: 1;
-			-webkit-transition: transform 150ms cubic-bezier(0.4,0,0.2,1),opacity 150ms cubic-bezier(0.4,0,0.2,1);
-			transition: transform 150ms cubic-bezier(0.4,0,0.2,1),opacity 150ms cubic-bezier(0.4,0,0.2,1);
 		}
 		&.active {
-			input, textarea {
-				padding-bottom: 10px;
-				padding-top: 20px;
-			}
-			.placeholder {
+			label {
 				-webkit-transform: translateY(-8px);
 				transform: translateY(-8px);
 				font-size: 12px;
