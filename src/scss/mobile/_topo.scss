@@ -1,0 +1,115 @@
+#middle {
+  #header--navbar {
+    background-color: $gray-background;
+    padding: 8px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    #hamburger-button {
+      color: $gray-dark;
+      position: initial;
+      padding: 0;
+    }
+    .logo--header {
+      margin: 0 40px;
+      a {
+        display: flex;
+        justify-content: center;
+        img {
+          position: initial;
+        }
+      }
+    }
+    .header-icons {
+      position: initial;
+      width: auto;
+      padding: 0;
+      a {
+        text-align: right;
+        &:nth-child(2) {
+          display: none;
+        }
+        .fa-user, .fa-shopping-cart{
+          @extend .icon !optional;
+          &:before {
+            display: none;
+          }
+        }
+        .fa-user {      
+          @extend .icon-user !optional;
+        }
+        .fa-shopping-cart {
+          @extend .icon-basket !optional;
+        }
+      }
+    }
+  }
+  #header--home {
+    .search {
+      padding: 0;
+      .search--header {
+        form {
+          position: relative;
+        }
+        .input-wrapper {
+          height: 50px;
+          padding: 0;
+          margin: 0;
+          input {
+            background-color: #fff;
+            border: 0;
+            @include shadow(0, 2px, 4px, 0.16);
+          }
+        }
+        button {
+          position: absolute;
+          right: 0;
+          @extend .btn;
+          width: 50px;
+          height: 50px;
+          padding: 0;
+          font-size: 0;
+          @include round(0);
+          &:before {
+            content: '';
+            @extend .icon-search !optional;
+          }
+        }
+      }
+    }
+    .category-menu--home {
+      display: none;
+    }
+    .banner--home{
+      .preloader-bg {
+        background-color: transparent;
+      }
+      .banner-wrapper {
+        margin: 0;
+        img {
+          margin: 0 auto;
+        }
+      }
+      .orbit-bullets-container {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        z-index: 4;
+        .orbit-bullets {
+          li {
+            margin: 0 4px;
+            &:after {
+              border: 1px solid $base-color;
+              background: transparent;
+            }
+            &.active {
+              &:after {
+                background-color: $base-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

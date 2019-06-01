@@ -1,0 +1,31 @@
+#middle {
+  .wd-product-price-description {
+    font-size: 12px;
+    * {
+      line-height: 1.5em;
+    }
+    .list-price:not(.variation) {
+      text-decoration: none;
+      font-size: 9px;
+      .prefix, span {
+        text-transform: none;
+        color: $gray-medium;
+        font-weight: normal;
+      }
+    }
+    .sale-price, .variation {
+      font-size: 14px;
+      .prefix {
+        text-transform: none;
+        color: $gray-dark;
+      }
+      strong, span {
+        font-family: $font-bold;
+        color: $base-color-black;
+      }
+    }
+    .discount {
+      display: none;
+    }
+  }
+}

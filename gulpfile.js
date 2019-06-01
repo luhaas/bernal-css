@@ -20,11 +20,22 @@ gulp.task('connect', function() {
 });
 
 gulp.task('sprite', function () {
-    var spriteData = gulp.src('./img/sprites/*.png')
+    var spriteData = gulp.src('./img/sprites/desktop/*.png')
         .pipe(spritesmith({
             /* this whole image path is used in css background declarations */
             imgName: './img/sprite.png',
             cssName: 'sprite.css'
+        }));
+    spriteData.img.pipe(gulp.dest('./img'));
+    spriteData.css.pipe(gulp.dest('./css'));
+});
+
+gulp.task('sprite-mobile', function () {
+    var spriteData = gulp.src('./img/sprites/mobile/*.png')
+        .pipe(spritesmith({
+            /* this whole image path is used in css background declarations */
+            imgName: './img/sprite_mobile.png',
+            cssName: 'sprite-mobile.css'
         }));
     spriteData.img.pipe(gulp.dest('./img'));
     spriteData.css.pipe(gulp.dest('./css'));

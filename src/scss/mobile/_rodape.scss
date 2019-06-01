@@ -1,0 +1,199 @@
+#middle {
+  #footer--home {
+    background-color: #fff;
+    .box {
+      padding: 40px 15px;
+      .row {
+        padding: 0;
+      }
+      .footer-subtitle, .page-menu .page-menu__root > a {
+        font-family: $font-bold;
+        font-size: $font-size;
+        text-transform: uppercase;
+        color: $base-color;
+        margin-bottom: 15px;
+      }
+      &.bg-yellow {
+        background-color: $base-color-2;
+        padding-top: 20px;
+        .back-to-top {
+          color: $base-color;
+          padding-top: 20px;
+          margin-bottom: 35px;
+        }
+        .page-menu {
+          margin-bottom: 35px;
+          .page-menu__root {
+            > a {
+              line-height: 1em;
+              text-indent: inherit;
+              pointer-events: none;
+            }
+            ul {
+              .page-menu__item {
+                a {
+                  @include link($base-color-black, $base-color-black, $base-color-black, none, none, none);
+                  font-size: 12px;
+                  line-height: 1.5em;
+                  text-indent: inherit;
+                }
+              }
+            }
+          }
+        }
+        .mobile--phone-number {
+          li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i {
+              margin-right: 5px;
+            }
+            a {
+              @include link($base-color-black, $base-color-black, $base-color-black, none, none, none);
+              font-size: 12px;
+            } 
+          }
+        }
+      }
+      &.bg-gray {
+        background-color: $gray-background;
+        .seguranca, .formas-pagamento {
+          margin-bottom: 35px;
+        }
+        .seguranca, .redes-sociais {
+          .shields {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a {
+              margin: 0 15px;
+            }
+          }
+        }
+        .seguranca {
+          .shield-letsencrypt {
+            display: block;
+            background-image: url('/custom/content/themes/shared/images/lets-encrypt.png');
+            width: 64px;
+            height: 64px;
+          }
+        }
+        .formas-pagamento {
+          text-align: center;
+        }
+      }
+      .development--footer {
+        padding: 0;
+        .row {
+          padding: 0;
+        }
+        .logo-linx {
+          margin-bottom: 35px;
+        }
+        .logo-fg {
+          width: 102px;
+          height: 26px;
+          margin: 0 auto;
+          a {
+            background: url('/custom/content/themes/shared/Images/desc-fg.png') 0 0 no-repeat;
+            height: 26px;
+            float: left;
+            width: 100%;
+            &:hover {
+              animation: play 2.5s infinite step-start;
+              -o-animation: play 2.5s infinite step-start;
+              -moz-animation: play 2.5s infinite step-start;
+              -webkit-animation: play 2.5s infinite step-start;
+            }
+            img {
+              float: right;
+              position: relative;
+              right: -4px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@-webkit-keyframes play {
+  0% {
+      background-position: 0 0; 
+  }
+  20% {
+      background-position: 0 -26px; 
+  }
+  40% {
+      background-position: 0 -52px; 
+  }
+  60% {
+      background-position: 0 -78px; 
+  }
+  80% {
+      background-position: 0 -104px; 
+  }
+  100% {
+      background-position: 0 0; 
+  } 
+}
+@-moz-keyframes play {
+  0% {
+      background-position: 0 0; 
+  }
+  20% {
+      background-position: 0 -26px; 
+  }
+  40% {
+      background-position: 0 -52px; 
+  }
+  60% {
+      background-position: 0 -78px; 
+  }
+  80% {
+      background-position: 0 -104px; 
+  }
+  100% {
+      background-position: 0 0; 
+  } 
+}
+@-o-keyframes play {
+  0% {
+      background-position: 0 0; 
+  }
+  20% {
+      background-position: 0 -26px; 
+  }
+  40% {
+      background-position: 0 -52px; 
+  }
+  60% {
+      background-position: 0 -78px; 
+  }
+  80% {
+      background-position: 0 -104px; 
+  }
+  100% {
+      background-position: 0 0; 
+  } 
+}
+@keyframes play {
+  0% {
+      background-position: 0 0; 
+  }
+  20% {
+      background-position: 0 -26px; 
+  }
+  40% {
+      background-position: 0 -52px; 
+  }
+  60% {
+      background-position: 0 -78px; 
+  }
+  80% {
+      background-position: 0 -104px; 
+  }
+  100% {
+      background-position: 0 0; 
+  }
+}

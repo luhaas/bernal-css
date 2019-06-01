@@ -1,0 +1,103 @@
+#middle {
+  .middle--home {
+    > .row {
+      padding: 25px 8px;
+      .wd-marketing-newsletter.wd-widget-js {
+        background-color: $base-color-2;
+        padding: 25px;
+        .wd-header {
+          .wd-title {
+            @extend .h3;
+            color: $base-color;
+            margin: 5px 0 35px;
+          }
+        }
+        .wd-content {
+          p, label {
+            display: none;
+          }
+          form {
+            margin: 0;
+            .input-wrapper {
+              margin-bottom: 8px;
+              input, button {
+                height: 32px;
+                @include shadow(2px, 2px, 4px, 0.16);
+              }
+              button {
+                font-size: 12px;
+                text-transform: uppercase;
+                font-family: $font-bold;
+                margin-top: 8px;
+                @extend .btn-wide;
+              }
+            }
+          }
+        }
+      }
+      .wd-brand-carousel {
+        .jcarousel-control-next, .jcarousel-control-prev {
+          width: 20px;
+          height: 50px;          
+          background-color: $gray-background;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &:before {
+            content: '';
+            display: block;
+          }
+          span {
+            display: none;
+          }
+        }
+        .jcarousel-control-next {
+          &:before {
+            @extend .icon-arrow-right !optional;
+          }
+        }
+        .jcarousel-control-prev {
+          &:before {
+            @extend .icon-arrow-left !optional;
+          }
+        }
+        li {
+          margin: 0 15px;
+          a {
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          img {
+            height: auto !important;
+            max-height: 52px;
+            width: auto !important;
+          }
+        }
+      }
+      .banner--home-grid {
+        .banner-container {
+          display: grid;
+          grid-template-columns: 148px 148px;
+          grid-gap: 8px;
+          .banner-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .alternative-text {
+              width: 100%;
+              background-color: $base-color;
+              color: $base-color-2;
+              font-size: 12px;
+              line-height: 32px;
+              text-align: center;
+              @include border-bottom-radius(3px);
+            }
+          }
+        }
+      }
+    }
+  }
+}

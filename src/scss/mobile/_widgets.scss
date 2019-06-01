@@ -1,0 +1,9 @@
+.wd-browsing-breadcrumbs {
+  padding-top: 15px;
+  li {
+    color: #555;
+    a {
+      @include link(#555, #555, #555, none, none, none);
+    }
+  }
+}
