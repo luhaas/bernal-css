@@ -100,7 +100,7 @@
         }
     	.atendimento  {
             @include shadow(0, 3px, 10px, 0.16);
-            background-color: #fff;
+            background-color: $white;
             width: 370px;
             margin-left: 18px;
             .title {
@@ -163,7 +163,7 @@
         }
     }
     .assinatura {
-        background-color: #fff;
+        background-color: $white;
     	.wrapper {
 	    	padding: 20px 0;
     	}

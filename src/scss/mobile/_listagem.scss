@@ -16,7 +16,7 @@
       grid-gap: 8px;
     }
     .product-list__product {
-      background-color: #fff;
+      background-color: $white;
       margin: 0;
       padding: 8px;
       @include shadow(1px, 1px, 2px, 0.16);
@@ -42,7 +42,7 @@
       }
     }
   }
-  .middle--search {
+  .middle--search, .middle--category {
     .qtd__resultados {
       display: none;
     }
@@ -84,7 +84,7 @@
         .browsing-grid__product {
           padding: 8px;
           margin-bottom: 8px;
-          background-color: #fff;
+          background-color: $white;
           .grid_wishlist {
             display: none;
           }

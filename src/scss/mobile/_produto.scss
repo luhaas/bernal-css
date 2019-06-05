@@ -1,0 +1,175 @@
+#middle {
+  .middle--product {
+    .breadcrumb {
+      background-color: $white;
+      padding-bottom: 20px;
+    }
+    .product {
+      h1 {
+        font-size: $font-size-16;
+      }
+      .pmedias {
+        .product__medias {
+          .medias-wapper {
+            border: 0;
+          }
+          .orbit-container .orbit-bullets-container {
+            li {
+              margin: 0 4px;
+              &:after {
+                border: 1px solid $base-color;
+                background: transparent;
+              }
+              &.active {
+                &:after {
+                  background-color: $base-color;
+                }
+              }
+            }
+          }
+        }
+      }
+      #product-rateing-start {
+        .row {
+          display: flex;
+          justify-content: center;
+          span {
+            font-size: 0;
+            a {
+              &:before {
+                content: '(Avalie Agora!)';
+                font-size: $font-size;
+                font-family: $font-bold;
+                color: $gray-55;
+              }
+            }
+          }
+        }
+      }
+      .row_prices {
+        display: flex;
+        .column-left, .column-right {
+          float: none;
+        }
+        .column-left {
+          border-right: 0;
+        }
+        .column-right {
+          border-left: 1px solid $gray-cc;
+        }
+      }
+      .wd-product-variations {
+        .title {
+          font-size: $font-size;
+        }
+        input[type="text"], select {
+          border: 1px solid $gray-cc;
+          @include round(2px);
+          height: 40px;
+        }
+      }
+      .qt__produtos {
+        border-top: 1px solid $gray-cc;
+        padding-top: 20px;
+        label {
+          font-size: $font-size;
+          font-family: $font-bold;
+          color: $gray-55;
+          margin-bottom: 8px;
+        }
+        .wd-product-amount {
+          width: 145px;
+          input {
+            height: 38px;
+            font-size: $font-size-16;
+            color: $gray-55;
+            font-family: $font-bold;
+            border-top: 1px solid $gray-cc;
+            border-bottom: 1px solid $gray-cc;
+          }
+          button {
+            color: $gray-55;
+            border-color: $gray-cc;
+            font-family: $font-bold;
+            font-size: $font-size;
+            font-weight: normal;
+            &[disabled] {
+              color: $gray-55;
+            }
+            &:hover {
+              background-color: #f8f8f8;
+            }
+          }
+        }
+      }
+      .wd-product-deliveryfee {
+        .input-wrapper {
+          margin: 0;
+          input {
+            border: 1px solid $gray-cc;
+            height: 40px;
+            margin: 0;
+            font-size: $font-size;
+            @include round(2px);
+          }
+        }
+        .button-wrapper {
+          width: 48px;
+          height: 40px;
+          button {
+            width: 48px;
+            height: 40px;
+            padding: 0;
+            background-color: $gray-medium;
+            font-family: $font-bold;
+            font-size: $font-size-16; 
+          }
+        }
+      }
+      .wd-buy-button {
+        button {
+          line-height: 50px;
+          font-size: $font-size-16;
+          font-family: $font-bold;
+          text-shadow: none;
+          font-weight: normal;
+          @include round(3px);
+        }
+      }
+      .wd-product-wishlist {
+        display: none;
+      }
+      .wd-descriptions {
+        .wd-descriptions-nav {
+          @include round(0);
+          li {
+            line-height: 40px;
+            font-size: $font-size;
+            color: $gray-55;
+            margin: 0;
+            a.title {
+              &:after {
+                bottom: 26px;
+                color: $gray-55;
+              }
+            }
+          }
+        }
+      }
+      .row-socialmedia h3.title {
+        color: $gray-55;
+        font-size: $font-size-16;
+      }
+      .wd-product-reviews .wd-product-reviews {
+        border-color: $gray-cc;
+        color: $gray-55;
+        @include round(0);
+        .wd-header .wd-title {
+          font-family: $font-bold;
+          font-weight: normal;
+          font-size: $font-size-16;
+        }
+      }
+    }
+  }
+}

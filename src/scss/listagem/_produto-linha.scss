@@ -1,7 +1,7 @@
 .wd-product-line {
 	height: 100%;
 	position: relative;
-	background-color: #fff;
+	background-color: $white;
 	@include shadow(3px, 3px, 6px, 0.12);
 	.name {
 		font-size: $font-size;

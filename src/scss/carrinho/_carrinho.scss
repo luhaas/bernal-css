@@ -97,7 +97,7 @@
 		}
 	}
 	.entrega-desconto {		
-		background-color: #fff;
+		background-color: $white;
 		padding: 25px 40px;
 		margin-bottom: 30px;
 		@include shadow(5px, 3px, 16px, 0.16);
@@ -268,9 +268,33 @@
 		}
 		.delivery-options {
 			margin-top: 15px;
-				float: left;
+			float: left;
+			width: 100%;
+			.location {
+				font-size: $font-size-16;
+				color: $base-color-black;
+				border-bottom: 0;
+				padding: 15px;
+				strong {
+					font-family: $font-regular;
+				}
+				.time {
+					display: none;
+				}
+			}
 			.js-delivery-choice {
+				border-bottom: 0;
+				margin: 0;
+				padding: 10px 25px;
+				b {
+					font-family: $font-regular;
+					.quote {
+						font-family: $font-bold;
+						color: $base-color-black;
+					}
+				}
 				.photo {
+					display: none;
 					width: 50px;
 					height: auto;
 					vertical-align: middle;
@@ -337,7 +361,7 @@
 		}
 	}
 	> .empty {
-		background-color: #fff;
+		background-color: $white;
 		font-size: 1.5em;
 		&:before {
 			content: ':(';

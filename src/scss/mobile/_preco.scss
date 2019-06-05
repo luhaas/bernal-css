@@ -24,8 +24,50 @@
         color: $base-color-black;
       }
     }
+    .condition {
+      font-size: 9px;
+      color: $gray-dark;
+      .parcels, .parcel-value {
+        color: $base-color-black;
+      }
+    }
+    .savings {
+      font-size: 9px;
+      color: $gray-medium;
+      .instant-price {
+        color: $base-color;
+        font-family: $font-bold;
+      }
+    }
     .discount {
       display: none;
+    }
+  }
+  .middle--product { 
+    .wd-product-price-description {
+      del.list-price {
+        span {
+          text-decoration: none;
+        }
+        &:not(.variation) {
+          font-size: 12px;
+        }
+      }
+      .sale-price, .variation {
+        font-size: 20px;
+        .sign, .decimal, .prefix {
+          font-size: 20px;
+        }
+        .prefix {
+          text-transform: none;
+          color: $gray-dark;
+          font-weight: normal;
+          position: initial;
+        }
+      }
+      .condition, .savings {
+        font-size: $font-size;
+      }
     }
   }
 }

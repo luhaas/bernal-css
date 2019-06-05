@@ -22,7 +22,7 @@
 				height: 0;
 				border-left: 7px solid transparent;
 				border-right: 7px solid transparent;
-				border-bottom: 7px solid #FFFFFF;
+				border-bottom: 7px solid $white;
 				position: absolute;
 				top: 40px;
 				left: 50%;
@@ -78,7 +78,7 @@
 								position: absolute;
 								top: 0;
 								right: 288px;
-								background-color: #fff;
+								background-color: $white;
 								grid-template-columns: 1fr 1fr 1fr 1fr;
 								grid-gap: 15px;
 	    					li {
@@ -273,7 +273,7 @@
 					}
 				}
 				&:hover {
-					background-color: #fff;
+					background-color: $white;
 					@include shadow(0, 3px, 10px, 0.24);					
 					.menu-wrapper {
 						display: flex;

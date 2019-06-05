@@ -10,7 +10,7 @@
         grid-gap: 30px;
         li {
           height: 120px;
-          background-color: #fff;
+          background-color: $white;
           @include shadow(2px, 2px, 6px, 0.16);
           display: flex;
           align-items: center;

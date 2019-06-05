@@ -31,7 +31,7 @@ body {
 		color: $gray-dark;
 		font-family: $font-regular;
 		font-size: $font-size;
-		background-color: #fff;
+		background-color: $white;
 		background-image: none;
 		border: none;
 		@include round(2px);
@@ -98,7 +98,7 @@ body {
 	.dropdown-shaddow {
 		display: none;
 		position: absolute;
-		background-color: #fff;
+		background-color: $white;
 		@include shadow(0, 0, 10px, 0.24);
 	}
 	.transform-center {

@@ -1,9 +1,13 @@
 .area-profile {
+    #middle {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 	.wd-browsing-breadcrumbs {
 		display: none;
 	}
 	.center-box {
-        background-color: #fff;
+        background-color: $white;
         padding: 25px;
     }
 	span.error {
@@ -26,12 +30,16 @@
 			clear: none;
 
 			#content-wrapper {
-				margin: 0;				
-				.wd-title {
-                    font-size: 32px;
-                    font-family: $font-bold;
-                    color: $base-color;
-				}
+                margin: 0;	
+                .wd-header { 
+                    padding-top: 0;
+                    padding-bottom: 15px;		
+                    .wd-title {
+                        font-size: 32px;
+                        font-family: $font-bold;
+                        color: $base-color-black;
+                    }
+                }
 			}
 		}
 	}
@@ -44,14 +52,12 @@
         display: none;
     }
     .center-box {
-        background-color: #fff;
+        background-color: $white;
     }
     span.error {
         color: darken( $danger, 40% );
         display: inline-block;
         padding: 5px;
-    }
-    #middle {
     }
     &:not(.page-login):not(.page-register) {
         #content {
