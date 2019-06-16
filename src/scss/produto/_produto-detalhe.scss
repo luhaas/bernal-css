@@ -14,6 +14,9 @@
 			width: 575px;
 			.wd-product-medias {
 				display: flex;
+				.large {
+					overflow: hidden;
+				}
 				.wd-product-medias-displayer {
 					.zoom, img.ezZoom-small {
 						width: 100% !important;
@@ -36,12 +39,18 @@
 					.wd-product-media-selector {
 						li {
 							width: 70px;
+							margin-top: 0;
+							margin-bottom: 15px;
+							border: 0;
+							line-height: 0;
 							img {
 								width: 100%;
 								height: auto;
 							}
 							&.selected {
-								border: 1px solid $base-color;
+								img {
+									border: 1px solid $base-color;
+								}
 							}
 						}						
 					}
@@ -194,6 +203,7 @@
 			.buy {
 				padding-right: 0;
 				margin-top: 30px;
+				max-width: 470px;
 				.wd-product-amount {
 					margin: 20px 0 10px;
 					@include input-quantity(45px,0.6em 0.6em,60px,38px, 1.2em);
@@ -206,7 +216,6 @@
 					margin: 0 0 10px;
 					.btn-buy {
 						@extend .btn-wide;
-						max-width: 470px;
 						height: 64px;
 						font-size: 24px;
 					}

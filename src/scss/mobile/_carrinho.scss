@@ -140,6 +140,10 @@
           padding-left: 5px;
         }
       }
+    }    
+    .discount__remove-coupon {
+      @include link($base-color, $base-color, $base-color, underline, underline, underline);
+      font-size: 12px;
     }
     .total__price {
       .line-1 {

@@ -3,9 +3,6 @@
 
 @import 'configs';
 body.EasyCheckoutStep {
-  #middle, #main {
-    padding: 0;
-  }
    .wd-easy-checkout {
        .header {
            .logo {
@@ -15,28 +12,27 @@ body.EasyCheckoutStep {
                background-position: left center;
            }
        }
-       .btn-outline {
-          color: $base-color;
+       .btn-outline, .btn-default {
+          color: $gray-dark;
           .badge {
-            background-color: $base-color;
+            background-color: $gray-dark;
           }
        }
    }
-   button:not(.btn-outline),
-   a.btn:not(.btn-outline) {
-      background-color: $base-color!important;
-      background-image: linear-gradient($base-color, $darken-color);
+   button:not(.btn-outline):not(.btn-default),
+   a.btn:not(.btn-outline):not(.btn-default) {
+      background-color: $base-color-green !important;
+      background-image: linear-gradient($base-color-green, shade($base-color-green, 30%));
       color: $font-white;
-      
    }
    .btn-show-basket,
    a,
    #summary .safe-message {
-      color: $base-color;
+      color: $base-color-green;
    }
    #ezcommerce {
-    background-image: url('/Custom/Content/Themes/#{$theme-path}/Imagens/core.png');
-    width: 124px;
-    height: 31px;
+    background-image: url('/Custom/Content/Themes/Shared/Images/linx.png');
+    width: 90px;
+    height: 10px;
    }
 }

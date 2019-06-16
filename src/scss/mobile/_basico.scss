@@ -34,10 +34,12 @@ body {
 		font-size: $font-size;
 		background-color: $white;
 		background-image: none;
-		border: none;
+		border: 1px solid $gray-cc;
 		@include round(2px);
 		&.error {
-			border-bottom: 1px solid darken($danger, 40% );
+			border-bottom-width: 1px;
+			border-bottom-style: solid;
+			border-bottom-color: darken($danger, 40%);
 		}
 	}
 	input[type=checkbox],
@@ -237,5 +239,14 @@ body {
 	}
 	.hide {
 		display: none;
+	}
+	.themodal-overlay {
+		padding: 0;
+		.the-modal {
+			margin: 0 !important;
+			max-width: 500px;
+			transform: translateX(-50%);
+			left: 50%;
+		}
 	}
 }

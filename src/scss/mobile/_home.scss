@@ -22,7 +22,11 @@
               margin-bottom: 8px;
               input, button {
                 height: 32px;
+                border-width: 0;
                 @include shadow(2px, 2px, 4px, 0.16);
+                &.error {
+                  border-width: 1px;
+                }
               }
               button {
                 font-size: 12px;

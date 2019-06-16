@@ -196,12 +196,10 @@
 				width: 60%;
 				max-width: 200px;
 				float: left;
-				@include round-right(0);
 			}
 			.js-coupon-calc {
 				width: 20%;
 				padding: 1em;
-				@include round-left(0);
 			}
 		}
 		.grid-content {

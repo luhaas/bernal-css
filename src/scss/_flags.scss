@@ -2,7 +2,19 @@
 	position: absolute;
 	 z-index: 10;
 	.flag {
-		@include flag();
+		display: table !important;
+		padding: 0 10px;
+		font-family: $font-medium;
+		font-size: 12px;
+		line-height: 20px;
+    background-color: $base-color-green;
+    color: $white;
+    text-align: center;
+    margin-bottom: 4px;
+		@include round(2px);
+		&.off {
+			background-color: $base-color
+		}
 	}	
 
 }

@@ -152,7 +152,7 @@
 			position: relative;
 			display: inline-block;
 			float: left;
-			h1 {
+			.wd-marketing-banner + h1 {
 				width: 100%;
 				text-align: center;
 				color: $font-white;

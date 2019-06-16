@@ -26,6 +26,7 @@
     padding: 0;
     height: 50px;
     width: 110px;
+    font-family: $font-medium;
     @include round-left(0);
   }
   .suggestion-box {

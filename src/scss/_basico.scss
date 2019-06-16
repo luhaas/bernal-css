@@ -244,7 +244,7 @@ body {
 	}
 	&.columns-2-left:not(.grid-empty) {
 		#content {
-			@include minus($wrapper,250px);
+			@include minus($wrapper,280px);
 			clear: none;
 			#content-wrapper {
 				margin: 0;
