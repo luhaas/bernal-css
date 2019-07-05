@@ -4,6 +4,10 @@
 	-webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.16);
 	-moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.16);
 	box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.16);
+	.wrapper {
+		width: 1170px;
+		padding: 0 !important;
+	}
 	.all-category {
 		background-color: $darken-color;
 		position: initial;
@@ -61,7 +65,7 @@
 							&.has-children {
 								h3 {
 									position: relative;
-									:before {
+									a:before {
 										content: '';
 										position: absolute;
 										left: -10px;
@@ -110,7 +114,7 @@
 							&:hover {
 								background-color: $lighten-color;
 								h3 {
-									&:before {										
+									a:before {										
 										@include arrow('left', $lighten-color, 12px);
 									}
 									a {									
@@ -149,6 +153,7 @@
 				float: left;
 				margin: 0;
 				padding: 0;
+				position: initial;
 				h3 {
 					font-size: $font-size;
 					font-family: $font-medium;
@@ -175,81 +180,97 @@
 						}
 					}
 				}
-				&:first-child {
+				&.drywall {
 					a {
 						.icon:before {
 							@extend .icon-menu-drywall !optional;
 						}
 					}
 				}
-				&:nth-child(2) {
+				&.materiais-de-construcao {
 					a {
 						.icon:before {
 							@extend .icon-menu-wheelbarrow !optional;
 						}
 					}
 				}
-				&:nth-child(3) {
+				&.tintas-e-acessorios {
 					a {
 						.icon:before {
 							@extend .icon-menu-paint-bucket !optional;
 						}
 					}
 				}
-				&:nth-child(4) {
+				&.ferramentas {
 					a {
 						.icon:before {
 							@extend .icon-menu-drill !optional;
 						}
 					}
 				}
-				&:nth-child(5) {
+				&.hidraulica {
 					a {
 						.icon:before {
 							@extend .icon-menu-oil !optional;
 						}
 					}
 				}
-				&:nth-child(6) {
+				&.eletrica {
 					a{
 						.icon:before {
 							@extend .icon-menu-plug !optional;
 						}
 					}
 				}
-				&:nth-child(7) {
+				&.jardim-piscina-e-lazer {
 					a {
 						.icon:before {
 							@extend .icon-menu-garden !optional;
 						}
 					}
 				}
-				&:nth-child(8) {
+				&.utilidades-domesticas {
 					a {
 						.icon:before {
 							@extend .icon-menu-housewares !optional;
 						}
 					}
 				}
-				&:nth-child(9) {
+				&.outlet {
+					background-color: $base-color-2;
 					a {
+						font-family: $font-bold;
+						color: $base-color;
 						.icon:before {
 							@extend .icon-menu-sale !optional;
 						}
 					}
 				}
+				&:nth-child(5), &:nth-child(6), &:nth-child(7), &:nth-child(8), &:last-child {
+					.menu-wrapper {
+						left: initial;
+						right: 0;
+					}
+				}
 				.menu-wrapper {
 					@extend .dropdown-shaddow !optional;
+					left: 0;
 					z-index: 55;
 					min-width: 100px;
 					transition-delay: 100ms;
 					.sub-section {
+						border-right: 1px solid $gray-background;
 						&.level-2 {
-							padding: 25px 40px 25px 25px;
+							padding: 0 40px 0 25px;
+							margin: 25px 0;
+							width: 485px;
+							column-count: 2;
+							column-gap: 15px;
 						}
 						> li {
 							margin-top: 0;
 							margin-bottom: 15px;
+							padding-right: 15px;
 							&:last-child {
 								margin-bottom: 0;
 							}
@@ -280,7 +301,6 @@
 						}
 						.most-searched-brands:not(.wd-widget) {
 							padding: 25px 40px;
-							border-left: 1px solid $gray-background;
 						}
 					}
 				}
@@ -293,68 +313,64 @@
 					h3 > a {						
 						color: $base-color;
 					}
-					&:first-child {
+					&.drywall {
 						a {
 							.icon:before {
 								@extend .icon-menu-drywall-hover !optional;
 							}
 						}
 					}
-					&:nth-child(2) {
+					&.materiais-de-construcao {
 						a {
 							.icon:before {
 								@extend .icon-menu-wheelbarrow-hover !optional;
 							}
 						}
 					}
-					&:nth-child(3) {
+					&.tintas-e-acessorios {
 						a {
 							.icon:before {
 								@extend .icon-menu-paint-bucket-hover !optional;
 							}
 						}
 					}
-					&:nth-child(4) {
+					&.ferramentas {
 						a {
 							.icon:before {
 								@extend .icon-menu-drill-hover !optional;
 							}
 						}
 					}
-					&:nth-child(5) {
+					&.hidraulica {
 						a {
 							.icon:before {
 								@extend .icon-menu-oil-hover !optional;
 							}
 						}
 					}
-					&:nth-child(6) {
+					&.eletrica {
 						a{
 							.icon:before {
 								@extend .icon-menu-plug-hover !optional;
 							}
 						}
 					}
-					&:nth-child(7) {
+					&.jardim-piscina-e-lazer {
 						a {
 							.icon:before {
 								@extend .icon-menu-garden-hover !optional;
 							}
 						}
 					}
-					&:nth-child(8) {
+					&.utilidades-domesticas {
 						a {
 							.icon:before {
 								@extend .icon-menu-housewares-hover !optional;
 							}
 						}
 					}
-					&:nth-child(9) {
-						a {
-							.icon:before {
-								@extend .icon-menu-sale-hover !optional;
-							}
-						}
+					&.outlet {
+						background-color: $darken-color-2;
 					}
 				}
 			}

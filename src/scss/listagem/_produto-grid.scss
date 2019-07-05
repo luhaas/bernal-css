@@ -148,9 +148,9 @@
 	}
 	.page-description {
 		margin-bottom: 15px;
+		overflow: hidden;
 		.banner {
 			position: relative;
-			display: inline-block;
 			float: left;
 			.wd-marketing-banner + h1 {
 				width: 100%;
