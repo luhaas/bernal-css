@@ -1,5 +1,5 @@
 # Tema Base - Plataforma Core
-Neste projeto você irá encontrar as folhas de estilo para estilizar sua loja a partir do tema Base da plataforma Core.
+Projeto com arquivos Scss para estilização da loja Bernal criado a partir do tema base da plataforma Core.
 
 ## Recursos Necessários
 - **[Git](https://git-scm.com/downloads)**
