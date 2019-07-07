@@ -14,9 +14,7 @@
 		color: $gray-dark;
 	}
 	.condition {
-		.parcels, .parcel-value {
-			font-weight: $font-bold;
-		}
+		font-size: $font-size;
 	}
 	.savings {		
 		font-size: 18px;
@@ -70,16 +68,19 @@
 				font-family: $base-color;
 				color: $price-off;
 			}
-		} 
-		.condition {
-			font-size: 12px;
 		}
 	}
 }
 .product-detail .product-price {
-	font-size: 18px;
+	font-size: 17px;
 	.wd-product-price {
 		width: max-content;
+	}
+	.condition {
+		font-size: 1em;
+		.parcels, .parcel-value {
+			font-family: $font-bold;
+		}
 	}
 	.discount {
 		background-color: $gray-light;
